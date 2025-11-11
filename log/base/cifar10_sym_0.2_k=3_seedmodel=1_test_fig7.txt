@@ -1,0 +1,23 @@
+Epoch 0 | Accuracy on train set: 9.00% 
+| Test Epoch 0	 Accuracy: 45.24% 
+Epoch 1 | Accuracy on train set: 37.08% 
+| Test Epoch 1	 Accuracy: 55.28% 
+Epoch 2 | Accuracy on train set: 45.36% 
+| Test Epoch 2	 Accuracy: 64.98% 
+Epoch 3 | Accuracy on train set: 53.14% 
+| Test Epoch 3	 Accuracy: 67.09% 
+Epoch 4 | Accuracy on train set: 55.64% 
+| Test Epoch 4	 Accuracy: 76.69% 
+Epoch 5 | Accuracy on train set: 63.13% 
+| Test Epoch 5	 Accuracy: 72.76% 
+Epoch 6 | Accuracy on train set: 60.54% 
+| Test Epoch 6	 Accuracy: 76.63% 
+Epoch 7 | Accuracy on train set: 63.84% 
+| Test Epoch 7	 Accuracy: 80.70% 
+Epoch 8 | Accuracy on train set: 67.65% 
+| Test Epoch 8	 Accuracy: 79.98% 
+Epoch 9 | Accuracy on train set: 66.91% 
+| Test Epoch 9	 Accuracy: 77.64% 
+Epoch 10 | Accuracy on train set: 65.15% labeled_fig7 data has a size of 37426, f-score: 0.984182labeled data has a size of 37426, f-score: 0.984182
+| Test Epoch 10	 Accuracy: 74.54% 
+Best Accuracy:80.70

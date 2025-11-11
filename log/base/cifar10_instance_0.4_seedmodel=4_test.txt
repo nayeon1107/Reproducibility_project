@@ -1,0 +1,603 @@
+Namespace(T=0.2, batch_size=32, data_path='./dataset2/cifar10', dataset='cifar10', fig_7=0, fluctuation_ablation=0, gpuid=0, k=3, lr=0.02, model='resnet18', noise_mode='instance', num_class=10, num_epochs=75, r=0.4, save_sel_sam=0, seed_model=4, seed_noise=1, semi='no', warm_up=10, wdecay=0.0005, without_Lcr=0, without_R=0)
+============ Initialize data
+============ Actual clean samples number:  30098
+============ use resnet18 
+============ Warmup stage | lr = 0.020, T in penalty = 0.200
+Epoch 0 | Accuracy on train set: 6.42% 
+cifar10:0.4-instance | Epoch [  0/ 75] Iter[  1/391]	 CE-loss: 2.4313cifar10:0.4-instance | Epoch [  0/ 75] Iter[ 51/391]	 CE-loss: 2.0533cifar10:0.4-instance | Epoch [  0/ 75] Iter[101/391]	 CE-loss: 2.0306cifar10:0.4-instance | Epoch [  0/ 75] Iter[151/391]	 CE-loss: 2.1311cifar10:0.4-instance | Epoch [  0/ 75] Iter[201/391]	 CE-loss: 1.8706cifar10:0.4-instance | Epoch [  0/ 75] Iter[251/391]	 CE-loss: 1.9486cifar10:0.4-instance | Epoch [  0/ 75] Iter[301/391]	 CE-loss: 1.7051cifar10:0.4-instance | Epoch [  0/ 75] Iter[351/391]	 CE-loss: 1.9153
+| Test Epoch 0	 Accuracy: 32.61% 
+
+
+
+============ Warmup stage | lr = 0.020, T in penalty = 0.200
+Epoch 1 | Accuracy on train set: 28.43% 
+cifar10:0.4-instance | Epoch [  1/ 75] Iter[  1/391]	 CE-loss: 1.8329cifar10:0.4-instance | Epoch [  1/ 75] Iter[ 51/391]	 CE-loss: 1.7220cifar10:0.4-instance | Epoch [  1/ 75] Iter[101/391]	 CE-loss: 1.8012cifar10:0.4-instance | Epoch [  1/ 75] Iter[151/391]	 CE-loss: 1.7271cifar10:0.4-instance | Epoch [  1/ 75] Iter[201/391]	 CE-loss: 1.8397cifar10:0.4-instance | Epoch [  1/ 75] Iter[251/391]	 CE-loss: 1.6071cifar10:0.4-instance | Epoch [  1/ 75] Iter[301/391]	 CE-loss: 1.6026cifar10:0.4-instance | Epoch [  1/ 75] Iter[351/391]	 CE-loss: 1.5566
+| Test Epoch 1	 Accuracy: 48.79% 
+
+
+
+============ Warmup stage | lr = 0.020, T in penalty = 0.200
+Epoch 2 | Accuracy on train set: 37.43% 
+cifar10:0.4-instance | Epoch [  2/ 75] Iter[  1/391]	 CE-loss: 1.5878cifar10:0.4-instance | Epoch [  2/ 75] Iter[ 51/391]	 CE-loss: 1.6885cifar10:0.4-instance | Epoch [  2/ 75] Iter[101/391]	 CE-loss: 1.5794cifar10:0.4-instance | Epoch [  2/ 75] Iter[151/391]	 CE-loss: 1.6801cifar10:0.4-instance | Epoch [  2/ 75] Iter[201/391]	 CE-loss: 1.6452cifar10:0.4-instance | Epoch [  2/ 75] Iter[251/391]	 CE-loss: 1.4898cifar10:0.4-instance | Epoch [  2/ 75] Iter[301/391]	 CE-loss: 1.4394cifar10:0.4-instance | Epoch [  2/ 75] Iter[351/391]	 CE-loss: 1.5050
+| Test Epoch 2	 Accuracy: 50.68% 
+
+
+
+============ Warmup stage | lr = 0.020, T in penalty = 0.200
+Epoch 3 | Accuracy on train set: 39.21% 
+cifar10:0.4-instance | Epoch [  3/ 75] Iter[  1/391]	 CE-loss: 1.4342cifar10:0.4-instance | Epoch [  3/ 75] Iter[ 51/391]	 CE-loss: 1.5411cifar10:0.4-instance | Epoch [  3/ 75] Iter[101/391]	 CE-loss: 1.4864cifar10:0.4-instance | Epoch [  3/ 75] Iter[151/391]	 CE-loss: 1.4857cifar10:0.4-instance | Epoch [  3/ 75] Iter[201/391]	 CE-loss: 1.4624cifar10:0.4-instance | Epoch [  3/ 75] Iter[251/391]	 CE-loss: 1.5032cifar10:0.4-instance | Epoch [  3/ 75] Iter[301/391]	 CE-loss: 1.4755cifar10:0.4-instance | Epoch [  3/ 75] Iter[351/391]	 CE-loss: 1.4567
+| Test Epoch 3	 Accuracy: 56.90% 
+
+
+
+============ Warmup stage | lr = 0.020, T in penalty = 0.200
+Epoch 4 | Accuracy on train set: 42.79% 
+cifar10:0.4-instance | Epoch [  4/ 75] Iter[  1/391]	 CE-loss: 1.5904cifar10:0.4-instance | Epoch [  4/ 75] Iter[ 51/391]	 CE-loss: 1.7284cifar10:0.4-instance | Epoch [  4/ 75] Iter[101/391]	 CE-loss: 1.3901cifar10:0.4-instance | Epoch [  4/ 75] Iter[151/391]	 CE-loss: 1.4381cifar10:0.4-instance | Epoch [  4/ 75] Iter[201/391]	 CE-loss: 1.4154cifar10:0.4-instance | Epoch [  4/ 75] Iter[251/391]	 CE-loss: 1.2826cifar10:0.4-instance | Epoch [  4/ 75] Iter[301/391]	 CE-loss: 1.4046cifar10:0.4-instance | Epoch [  4/ 75] Iter[351/391]	 CE-loss: 1.4190
+| Test Epoch 4	 Accuracy: 70.90% 
+
+
+
+============ Warmup stage | lr = 0.020, T in penalty = 0.200
+Epoch 5 | Accuracy on train set: 47.44% 
+cifar10:0.4-instance | Epoch [  5/ 75] Iter[  1/391]	 CE-loss: 1.5271cifar10:0.4-instance | Epoch [  5/ 75] Iter[ 51/391]	 CE-loss: 1.3009cifar10:0.4-instance | Epoch [  5/ 75] Iter[101/391]	 CE-loss: 1.5372cifar10:0.4-instance | Epoch [  5/ 75] Iter[151/391]	 CE-loss: 1.4827cifar10:0.4-instance | Epoch [  5/ 75] Iter[201/391]	 CE-loss: 1.3572cifar10:0.4-instance | Epoch [  5/ 75] Iter[251/391]	 CE-loss: 1.4941cifar10:0.4-instance | Epoch [  5/ 75] Iter[301/391]	 CE-loss: 1.4657cifar10:0.4-instance | Epoch [  5/ 75] Iter[351/391]	 CE-loss: 1.3770
+| Test Epoch 5	 Accuracy: 66.22% 
+
+
+
+============ Warmup stage | lr = 0.020, T in penalty = 0.200
+Epoch 6 | Accuracy on train set: 46.01% 
+cifar10:0.4-instance | Epoch [  6/ 75] Iter[  1/391]	 CE-loss: 1.3798cifar10:0.4-instance | Epoch [  6/ 75] Iter[ 51/391]	 CE-loss: 1.3124cifar10:0.4-instance | Epoch [  6/ 75] Iter[101/391]	 CE-loss: 1.3485cifar10:0.4-instance | Epoch [  6/ 75] Iter[151/391]	 CE-loss: 1.5085cifar10:0.4-instance | Epoch [  6/ 75] Iter[201/391]	 CE-loss: 1.2559cifar10:0.4-instance | Epoch [  6/ 75] Iter[251/391]	 CE-loss: 1.3301cifar10:0.4-instance | Epoch [  6/ 75] Iter[301/391]	 CE-loss: 1.2658cifar10:0.4-instance | Epoch [  6/ 75] Iter[351/391]	 CE-loss: 1.3244
+| Test Epoch 6	 Accuracy: 66.81% 
+
+
+
+============ Warmup stage | lr = 0.020, T in penalty = 0.200
+Epoch 7 | Accuracy on train set: 47.37% 
+cifar10:0.4-instance | Epoch [  7/ 75] Iter[  1/391]	 CE-loss: 1.3718cifar10:0.4-instance | Epoch [  7/ 75] Iter[ 51/391]	 CE-loss: 1.3014cifar10:0.4-instance | Epoch [  7/ 75] Iter[101/391]	 CE-loss: 1.2960cifar10:0.4-instance | Epoch [  7/ 75] Iter[151/391]	 CE-loss: 1.2962cifar10:0.4-instance | Epoch [  7/ 75] Iter[201/391]	 CE-loss: 1.3558cifar10:0.4-instance | Epoch [  7/ 75] Iter[251/391]	 CE-loss: 1.2406cifar10:0.4-instance | Epoch [  7/ 75] Iter[301/391]	 CE-loss: 1.3484cifar10:0.4-instance | Epoch [  7/ 75] Iter[351/391]	 CE-loss: 1.2014
+| Test Epoch 7	 Accuracy: 69.43% 
+
+
+
+============ Warmup stage | lr = 0.020, T in penalty = 0.200
+Epoch 8 | Accuracy on train set: 47.60% 
+cifar10:0.4-instance | Epoch [  8/ 75] Iter[  1/391]	 CE-loss: 1.1616cifar10:0.4-instance | Epoch [  8/ 75] Iter[ 51/391]	 CE-loss: 1.2039cifar10:0.4-instance | Epoch [  8/ 75] Iter[101/391]	 CE-loss: 1.1986cifar10:0.4-instance | Epoch [  8/ 75] Iter[151/391]	 CE-loss: 1.2610cifar10:0.4-instance | Epoch [  8/ 75] Iter[201/391]	 CE-loss: 1.3957cifar10:0.4-instance | Epoch [  8/ 75] Iter[251/391]	 CE-loss: 1.3413cifar10:0.4-instance | Epoch [  8/ 75] Iter[301/391]	 CE-loss: 1.2211cifar10:0.4-instance | Epoch [  8/ 75] Iter[351/391]	 CE-loss: 1.2226
+| Test Epoch 8	 Accuracy: 73.56% 
+
+
+
+============ Warmup stage | lr = 0.020, T in penalty = 0.200
+Epoch 9 | Accuracy on train set: 50.78% 
+cifar10:0.4-instance | Epoch [  9/ 75] Iter[  1/391]	 CE-loss: 1.2262cifar10:0.4-instance | Epoch [  9/ 75] Iter[ 51/391]	 CE-loss: 1.2297cifar10:0.4-instance | Epoch [  9/ 75] Iter[101/391]	 CE-loss: 1.2370cifar10:0.4-instance | Epoch [  9/ 75] Iter[151/391]	 CE-loss: 1.3630cifar10:0.4-instance | Epoch [  9/ 75] Iter[201/391]	 CE-loss: 1.2330cifar10:0.4-instance | Epoch [  9/ 75] Iter[251/391]	 CE-loss: 1.4112cifar10:0.4-instance | Epoch [  9/ 75] Iter[301/391]	 CE-loss: 1.1734cifar10:0.4-instance | Epoch [  9/ 75] Iter[351/391]	 CE-loss: 1.1493
+| Test Epoch 9	 Accuracy: 72.49% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 10 | Accuracy on train set: 50.28% 
+labeled data has a size of 31882, f-score: 0.845148
+cifar10:0.4-instance | Epoch [ 10/ 75] Iter[  1/997]	  loss: 0.96cifar10:0.4-instance | Epoch [ 10/ 75] Iter[ 51/997]	  loss: 1.35cifar10:0.4-instance | Epoch [ 10/ 75] Iter[101/997]	  loss: 1.23cifar10:0.4-instance | Epoch [ 10/ 75] Iter[151/997]	  loss: 0.98cifar10:0.4-instance | Epoch [ 10/ 75] Iter[201/997]	  loss: 0.79cifar10:0.4-instance | Epoch [ 10/ 75] Iter[251/997]	  loss: 0.90cifar10:0.4-instance | Epoch [ 10/ 75] Iter[301/997]	  loss: 0.88cifar10:0.4-instance | Epoch [ 10/ 75] Iter[351/997]	  loss: 0.95cifar10:0.4-instance | Epoch [ 10/ 75] Iter[401/997]	  loss: 1.06cifar10:0.4-instance | Epoch [ 10/ 75] Iter[451/997]	  loss: 1.07cifar10:0.4-instance | Epoch [ 10/ 75] Iter[501/997]	  loss: 0.84cifar10:0.4-instance | Epoch [ 10/ 75] Iter[551/997]	  loss: 1.25cifar10:0.4-instance | Epoch [ 10/ 75] Iter[601/997]	  loss: 1.01cifar10:0.4-instance | Epoch [ 10/ 75] Iter[651/997]	  loss: 0.74cifar10:0.4-instance | Epoch [ 10/ 75] Iter[701/997]	  loss: 0.81cifar10:0.4-instance | Epoch [ 10/ 75] Iter[751/997]	  loss: 0.87cifar10:0.4-instance | Epoch [ 10/ 75] Iter[801/997]	  loss: 0.97cifar10:0.4-instance | Epoch [ 10/ 75] Iter[851/997]	  loss: 0.93cifar10:0.4-instance | Epoch [ 10/ 75] Iter[901/997]	  loss: 1.17cifar10:0.4-instance | Epoch [ 10/ 75] Iter[951/997]	  loss: 0.77
+| Test Epoch 10	 Accuracy: 75.20% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 11 | Accuracy on train set: 48.39% 
+labeled data has a size of 30995, f-score: 0.865817
+cifar10:0.4-instance | Epoch [ 11/ 75] Iter[  1/969]	  loss: 0.99cifar10:0.4-instance | Epoch [ 11/ 75] Iter[ 51/969]	  loss: 1.03cifar10:0.4-instance | Epoch [ 11/ 75] Iter[101/969]	  loss: 0.80cifar10:0.4-instance | Epoch [ 11/ 75] Iter[151/969]	  loss: 1.00cifar10:0.4-instance | Epoch [ 11/ 75] Iter[201/969]	  loss: 0.59cifar10:0.4-instance | Epoch [ 11/ 75] Iter[251/969]	  loss: 0.71cifar10:0.4-instance | Epoch [ 11/ 75] Iter[301/969]	  loss: 0.75cifar10:0.4-instance | Epoch [ 11/ 75] Iter[351/969]	  loss: 0.79cifar10:0.4-instance | Epoch [ 11/ 75] Iter[401/969]	  loss: 1.02cifar10:0.4-instance | Epoch [ 11/ 75] Iter[451/969]	  loss: 0.72cifar10:0.4-instance | Epoch [ 11/ 75] Iter[501/969]	  loss: 0.68cifar10:0.4-instance | Epoch [ 11/ 75] Iter[551/969]	  loss: 0.95cifar10:0.4-instance | Epoch [ 11/ 75] Iter[601/969]	  loss: 0.81cifar10:0.4-instance | Epoch [ 11/ 75] Iter[651/969]	  loss: 0.71cifar10:0.4-instance | Epoch [ 11/ 75] Iter[701/969]	  loss: 0.57cifar10:0.4-instance | Epoch [ 11/ 75] Iter[751/969]	  loss: 0.85cifar10:0.4-instance | Epoch [ 11/ 75] Iter[801/969]	  loss: 0.76cifar10:0.4-instance | Epoch [ 11/ 75] Iter[851/969]	  loss: 0.55cifar10:0.4-instance | Epoch [ 11/ 75] Iter[901/969]	  loss: 1.00cifar10:0.4-instance | Epoch [ 11/ 75] Iter[951/969]	  loss: 0.70
+| Test Epoch 11	 Accuracy: 76.76% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 12 | Accuracy on train set: 50.40% 
+labeled data has a size of 30476, f-score: 0.885254
+cifar10:0.4-instance | Epoch [ 12/ 75] Iter[  1/953]	  loss: 0.67cifar10:0.4-instance | Epoch [ 12/ 75] Iter[ 51/953]	  loss: 0.61cifar10:0.4-instance | Epoch [ 12/ 75] Iter[101/953]	  loss: 0.83cifar10:0.4-instance | Epoch [ 12/ 75] Iter[151/953]	  loss: 0.68cifar10:0.4-instance | Epoch [ 12/ 75] Iter[201/953]	  loss: 1.04cifar10:0.4-instance | Epoch [ 12/ 75] Iter[251/953]	  loss: 0.50cifar10:0.4-instance | Epoch [ 12/ 75] Iter[301/953]	  loss: 0.83cifar10:0.4-instance | Epoch [ 12/ 75] Iter[351/953]	  loss: 0.58cifar10:0.4-instance | Epoch [ 12/ 75] Iter[401/953]	  loss: 0.61cifar10:0.4-instance | Epoch [ 12/ 75] Iter[451/953]	  loss: 0.45cifar10:0.4-instance | Epoch [ 12/ 75] Iter[501/953]	  loss: 0.93cifar10:0.4-instance | Epoch [ 12/ 75] Iter[551/953]	  loss: 0.64cifar10:0.4-instance | Epoch [ 12/ 75] Iter[601/953]	  loss: 0.68cifar10:0.4-instance | Epoch [ 12/ 75] Iter[651/953]	  loss: 0.61cifar10:0.4-instance | Epoch [ 12/ 75] Iter[701/953]	  loss: 0.54cifar10:0.4-instance | Epoch [ 12/ 75] Iter[751/953]	  loss: 0.61cifar10:0.4-instance | Epoch [ 12/ 75] Iter[801/953]	  loss: 0.68cifar10:0.4-instance | Epoch [ 12/ 75] Iter[851/953]	  loss: 0.48cifar10:0.4-instance | Epoch [ 12/ 75] Iter[901/953]	  loss: 0.70cifar10:0.4-instance | Epoch [ 12/ 75] Iter[951/953]	  loss: 0.86
+| Test Epoch 12	 Accuracy: 75.27% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 13 | Accuracy on train set: 49.05% 
+labeled data has a size of 29270, f-score: 0.923232
+cifar10:0.4-instance | Epoch [ 13/ 75] Iter[  1/915]	  loss: 0.62cifar10:0.4-instance | Epoch [ 13/ 75] Iter[ 51/915]	  loss: 0.84cifar10:0.4-instance | Epoch [ 13/ 75] Iter[101/915]	  loss: 0.53cifar10:0.4-instance | Epoch [ 13/ 75] Iter[151/915]	  loss: 0.69cifar10:0.4-instance | Epoch [ 13/ 75] Iter[201/915]	  loss: 0.78cifar10:0.4-instance | Epoch [ 13/ 75] Iter[251/915]	  loss: 0.63cifar10:0.4-instance | Epoch [ 13/ 75] Iter[301/915]	  loss: 0.62cifar10:0.4-instance | Epoch [ 13/ 75] Iter[351/915]	  loss: 0.50cifar10:0.4-instance | Epoch [ 13/ 75] Iter[401/915]	  loss: 0.72cifar10:0.4-instance | Epoch [ 13/ 75] Iter[451/915]	  loss: 0.54cifar10:0.4-instance | Epoch [ 13/ 75] Iter[501/915]	  loss: 0.68cifar10:0.4-instance | Epoch [ 13/ 75] Iter[551/915]	  loss: 0.54cifar10:0.4-instance | Epoch [ 13/ 75] Iter[601/915]	  loss: 0.37cifar10:0.4-instance | Epoch [ 13/ 75] Iter[651/915]	  loss: 0.39cifar10:0.4-instance | Epoch [ 13/ 75] Iter[701/915]	  loss: 0.45cifar10:0.4-instance | Epoch [ 13/ 75] Iter[751/915]	  loss: 0.61cifar10:0.4-instance | Epoch [ 13/ 75] Iter[801/915]	  loss: 0.60cifar10:0.4-instance | Epoch [ 13/ 75] Iter[851/915]	  loss: 0.78cifar10:0.4-instance | Epoch [ 13/ 75] Iter[901/915]	  loss: 0.54
+| Test Epoch 13	 Accuracy: 78.74% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 14 | Accuracy on train set: 51.49% 
+labeled data has a size of 29393, f-score: 0.927330
+cifar10:0.4-instance | Epoch [ 14/ 75] Iter[  1/919]	  loss: 0.39cifar10:0.4-instance | Epoch [ 14/ 75] Iter[ 51/919]	  loss: 0.57cifar10:0.4-instance | Epoch [ 14/ 75] Iter[101/919]	  loss: 0.31cifar10:0.4-instance | Epoch [ 14/ 75] Iter[151/919]	  loss: 0.97cifar10:0.4-instance | Epoch [ 14/ 75] Iter[201/919]	  loss: 0.70cifar10:0.4-instance | Epoch [ 14/ 75] Iter[251/919]	  loss: 0.54cifar10:0.4-instance | Epoch [ 14/ 75] Iter[301/919]	  loss: 0.48cifar10:0.4-instance | Epoch [ 14/ 75] Iter[351/919]	  loss: 0.63cifar10:0.4-instance | Epoch [ 14/ 75] Iter[401/919]	  loss: 0.69cifar10:0.4-instance | Epoch [ 14/ 75] Iter[451/919]	  loss: 0.66cifar10:0.4-instance | Epoch [ 14/ 75] Iter[501/919]	  loss: 0.86cifar10:0.4-instance | Epoch [ 14/ 75] Iter[551/919]	  loss: 1.00cifar10:0.4-instance | Epoch [ 14/ 75] Iter[601/919]	  loss: 0.62cifar10:0.4-instance | Epoch [ 14/ 75] Iter[651/919]	  loss: 0.61cifar10:0.4-instance | Epoch [ 14/ 75] Iter[701/919]	  loss: 0.56cifar10:0.4-instance | Epoch [ 14/ 75] Iter[751/919]	  loss: 0.49cifar10:0.4-instance | Epoch [ 14/ 75] Iter[801/919]	  loss: 0.61cifar10:0.4-instance | Epoch [ 14/ 75] Iter[851/919]	  loss: 0.55cifar10:0.4-instance | Epoch [ 14/ 75] Iter[901/919]	  loss: 0.79
+| Test Epoch 14	 Accuracy: 79.60% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 15 | Accuracy on train set: 51.75% 
+labeled data has a size of 29703, f-score: 0.930209
+cifar10:0.4-instance | Epoch [ 15/ 75] Iter[  1/929]	  loss: 0.38cifar10:0.4-instance | Epoch [ 15/ 75] Iter[ 51/929]	  loss: 0.45cifar10:0.4-instance | Epoch [ 15/ 75] Iter[101/929]	  loss: 0.44cifar10:0.4-instance | Epoch [ 15/ 75] Iter[151/929]	  loss: 0.75cifar10:0.4-instance | Epoch [ 15/ 75] Iter[201/929]	  loss: 0.71cifar10:0.4-instance | Epoch [ 15/ 75] Iter[251/929]	  loss: 0.48cifar10:0.4-instance | Epoch [ 15/ 75] Iter[301/929]	  loss: 0.55cifar10:0.4-instance | Epoch [ 15/ 75] Iter[351/929]	  loss: 0.53cifar10:0.4-instance | Epoch [ 15/ 75] Iter[401/929]	  loss: 0.61cifar10:0.4-instance | Epoch [ 15/ 75] Iter[451/929]	  loss: 0.40cifar10:0.4-instance | Epoch [ 15/ 75] Iter[501/929]	  loss: 0.69cifar10:0.4-instance | Epoch [ 15/ 75] Iter[551/929]	  loss: 0.64cifar10:0.4-instance | Epoch [ 15/ 75] Iter[601/929]	  loss: 0.55cifar10:0.4-instance | Epoch [ 15/ 75] Iter[651/929]	  loss: 0.49cifar10:0.4-instance | Epoch [ 15/ 75] Iter[701/929]	  loss: 0.52cifar10:0.4-instance | Epoch [ 15/ 75] Iter[751/929]	  loss: 0.60cifar10:0.4-instance | Epoch [ 15/ 75] Iter[801/929]	  loss: 0.36cifar10:0.4-instance | Epoch [ 15/ 75] Iter[851/929]	  loss: 0.49cifar10:0.4-instance | Epoch [ 15/ 75] Iter[901/929]	  loss: 0.45
+| Test Epoch 15	 Accuracy: 80.04% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 16 | Accuracy on train set: 51.85% 
+labeled data has a size of 29679, f-score: 0.936285
+cifar10:0.4-instance | Epoch [ 16/ 75] Iter[  1/928]	  loss: 0.43cifar10:0.4-instance | Epoch [ 16/ 75] Iter[ 51/928]	  loss: 0.40cifar10:0.4-instance | Epoch [ 16/ 75] Iter[101/928]	  loss: 0.43cifar10:0.4-instance | Epoch [ 16/ 75] Iter[151/928]	  loss: 0.49cifar10:0.4-instance | Epoch [ 16/ 75] Iter[201/928]	  loss: 0.59cifar10:0.4-instance | Epoch [ 16/ 75] Iter[251/928]	  loss: 0.33cifar10:0.4-instance | Epoch [ 16/ 75] Iter[301/928]	  loss: 0.43cifar10:0.4-instance | Epoch [ 16/ 75] Iter[351/928]	  loss: 0.35cifar10:0.4-instance | Epoch [ 16/ 75] Iter[401/928]	  loss: 0.48cifar10:0.4-instance | Epoch [ 16/ 75] Iter[451/928]	  loss: 0.71cifar10:0.4-instance | Epoch [ 16/ 75] Iter[501/928]	  loss: 0.83cifar10:0.4-instance | Epoch [ 16/ 75] Iter[551/928]	  loss: 0.45cifar10:0.4-instance | Epoch [ 16/ 75] Iter[601/928]	  loss: 0.52cifar10:0.4-instance | Epoch [ 16/ 75] Iter[651/928]	  loss: 0.85cifar10:0.4-instance | Epoch [ 16/ 75] Iter[701/928]	  loss: 0.39cifar10:0.4-instance | Epoch [ 16/ 75] Iter[751/928]	  loss: 0.44cifar10:0.4-instance | Epoch [ 16/ 75] Iter[801/928]	  loss: 0.42cifar10:0.4-instance | Epoch [ 16/ 75] Iter[851/928]	  loss: 0.57cifar10:0.4-instance | Epoch [ 16/ 75] Iter[901/928]	  loss: 0.44
+| Test Epoch 16	 Accuracy: 78.67% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 17 | Accuracy on train set: 51.88% 
+labeled data has a size of 29676, f-score: 0.931999
+cifar10:0.4-instance | Epoch [ 17/ 75] Iter[  1/928]	  loss: 0.46cifar10:0.4-instance | Epoch [ 17/ 75] Iter[ 51/928]	  loss: 0.90cifar10:0.4-instance | Epoch [ 17/ 75] Iter[101/928]	  loss: 0.90cifar10:0.4-instance | Epoch [ 17/ 75] Iter[151/928]	  loss: 0.51cifar10:0.4-instance | Epoch [ 17/ 75] Iter[201/928]	  loss: 0.48cifar10:0.4-instance | Epoch [ 17/ 75] Iter[251/928]	  loss: 0.48cifar10:0.4-instance | Epoch [ 17/ 75] Iter[301/928]	  loss: 0.46cifar10:0.4-instance | Epoch [ 17/ 75] Iter[351/928]	  loss: 0.65cifar10:0.4-instance | Epoch [ 17/ 75] Iter[401/928]	  loss: 0.44cifar10:0.4-instance | Epoch [ 17/ 75] Iter[451/928]	  loss: 0.47cifar10:0.4-instance | Epoch [ 17/ 75] Iter[501/928]	  loss: 0.41cifar10:0.4-instance | Epoch [ 17/ 75] Iter[551/928]	  loss: 0.57cifar10:0.4-instance | Epoch [ 17/ 75] Iter[601/928]	  loss: 0.44cifar10:0.4-instance | Epoch [ 17/ 75] Iter[651/928]	  loss: 0.50cifar10:0.4-instance | Epoch [ 17/ 75] Iter[701/928]	  loss: 0.41cifar10:0.4-instance | Epoch [ 17/ 75] Iter[751/928]	  loss: 0.31cifar10:0.4-instance | Epoch [ 17/ 75] Iter[801/928]	  loss: 0.59cifar10:0.4-instance | Epoch [ 17/ 75] Iter[851/928]	  loss: 0.38cifar10:0.4-instance | Epoch [ 17/ 75] Iter[901/928]	  loss: 0.51
+| Test Epoch 17	 Accuracy: 80.04% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 18 | Accuracy on train set: 52.90% 
+labeled data has a size of 29680, f-score: 0.931671
+cifar10:0.4-instance | Epoch [ 18/ 75] Iter[  1/928]	  loss: 0.49cifar10:0.4-instance | Epoch [ 18/ 75] Iter[ 51/928]	  loss: 0.57cifar10:0.4-instance | Epoch [ 18/ 75] Iter[101/928]	  loss: 0.37cifar10:0.4-instance | Epoch [ 18/ 75] Iter[151/928]	  loss: 0.37cifar10:0.4-instance | Epoch [ 18/ 75] Iter[201/928]	  loss: 0.50cifar10:0.4-instance | Epoch [ 18/ 75] Iter[251/928]	  loss: 0.58cifar10:0.4-instance | Epoch [ 18/ 75] Iter[301/928]	  loss: 0.56cifar10:0.4-instance | Epoch [ 18/ 75] Iter[351/928]	  loss: 0.32cifar10:0.4-instance | Epoch [ 18/ 75] Iter[401/928]	  loss: 0.48cifar10:0.4-instance | Epoch [ 18/ 75] Iter[451/928]	  loss: 0.48cifar10:0.4-instance | Epoch [ 18/ 75] Iter[501/928]	  loss: 0.50cifar10:0.4-instance | Epoch [ 18/ 75] Iter[551/928]	  loss: 0.59cifar10:0.4-instance | Epoch [ 18/ 75] Iter[601/928]	  loss: 0.57cifar10:0.4-instance | Epoch [ 18/ 75] Iter[651/928]	  loss: 0.50cifar10:0.4-instance | Epoch [ 18/ 75] Iter[701/928]	  loss: 0.45cifar10:0.4-instance | Epoch [ 18/ 75] Iter[751/928]	  loss: 0.40cifar10:0.4-instance | Epoch [ 18/ 75] Iter[801/928]	  loss: 0.40cifar10:0.4-instance | Epoch [ 18/ 75] Iter[851/928]	  loss: 0.49cifar10:0.4-instance | Epoch [ 18/ 75] Iter[901/928]	  loss: 0.67
+| Test Epoch 18	 Accuracy: 78.71% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 19 | Accuracy on train set: 52.28% 
+labeled data has a size of 29753, f-score: 0.926293
+cifar10:0.4-instance | Epoch [ 19/ 75] Iter[  1/930]	  loss: 0.82cifar10:0.4-instance | Epoch [ 19/ 75] Iter[ 51/930]	  loss: 0.38cifar10:0.4-instance | Epoch [ 19/ 75] Iter[101/930]	  loss: 0.36cifar10:0.4-instance | Epoch [ 19/ 75] Iter[151/930]	  loss: 0.39cifar10:0.4-instance | Epoch [ 19/ 75] Iter[201/930]	  loss: 0.81cifar10:0.4-instance | Epoch [ 19/ 75] Iter[251/930]	  loss: 0.52cifar10:0.4-instance | Epoch [ 19/ 75] Iter[301/930]	  loss: 0.64cifar10:0.4-instance | Epoch [ 19/ 75] Iter[351/930]	  loss: 0.62cifar10:0.4-instance | Epoch [ 19/ 75] Iter[401/930]	  loss: 0.44cifar10:0.4-instance | Epoch [ 19/ 75] Iter[451/930]	  loss: 0.46cifar10:0.4-instance | Epoch [ 19/ 75] Iter[501/930]	  loss: 0.47cifar10:0.4-instance | Epoch [ 19/ 75] Iter[551/930]	  loss: 0.44cifar10:0.4-instance | Epoch [ 19/ 75] Iter[601/930]	  loss: 0.40cifar10:0.4-instance | Epoch [ 19/ 75] Iter[651/930]	  loss: 0.61cifar10:0.4-instance | Epoch [ 19/ 75] Iter[701/930]	  loss: 0.43cifar10:0.4-instance | Epoch [ 19/ 75] Iter[751/930]	  loss: 0.38cifar10:0.4-instance | Epoch [ 19/ 75] Iter[801/930]	  loss: 0.87cifar10:0.4-instance | Epoch [ 19/ 75] Iter[851/930]	  loss: 0.67cifar10:0.4-instance | Epoch [ 19/ 75] Iter[901/930]	  loss: 0.48
+| Test Epoch 19	 Accuracy: 79.83% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 20 | Accuracy on train set: 52.96% 
+labeled data has a size of 29834, f-score: 0.927097
+cifar10:0.4-instance | Epoch [ 20/ 75] Iter[  1/933]	  loss: 0.49cifar10:0.4-instance | Epoch [ 20/ 75] Iter[ 51/933]	  loss: 0.63cifar10:0.4-instance | Epoch [ 20/ 75] Iter[101/933]	  loss: 0.55cifar10:0.4-instance | Epoch [ 20/ 75] Iter[151/933]	  loss: 0.53cifar10:0.4-instance | Epoch [ 20/ 75] Iter[201/933]	  loss: 0.74cifar10:0.4-instance | Epoch [ 20/ 75] Iter[251/933]	  loss: 0.57cifar10:0.4-instance | Epoch [ 20/ 75] Iter[301/933]	  loss: 0.41cifar10:0.4-instance | Epoch [ 20/ 75] Iter[351/933]	  loss: 0.62cifar10:0.4-instance | Epoch [ 20/ 75] Iter[401/933]	  loss: 0.34cifar10:0.4-instance | Epoch [ 20/ 75] Iter[451/933]	  loss: 0.58cifar10:0.4-instance | Epoch [ 20/ 75] Iter[501/933]	  loss: 0.63cifar10:0.4-instance | Epoch [ 20/ 75] Iter[551/933]	  loss: 0.64cifar10:0.4-instance | Epoch [ 20/ 75] Iter[601/933]	  loss: 0.41cifar10:0.4-instance | Epoch [ 20/ 75] Iter[651/933]	  loss: 0.63cifar10:0.4-instance | Epoch [ 20/ 75] Iter[701/933]	  loss: 0.42cifar10:0.4-instance | Epoch [ 20/ 75] Iter[751/933]	  loss: 0.57cifar10:0.4-instance | Epoch [ 20/ 75] Iter[801/933]	  loss: 0.63cifar10:0.4-instance | Epoch [ 20/ 75] Iter[851/933]	  loss: 0.65cifar10:0.4-instance | Epoch [ 20/ 75] Iter[901/933]	  loss: 0.53
+| Test Epoch 20	 Accuracy: 80.07% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 21 | Accuracy on train set: 53.09% 
+labeled data has a size of 29859, f-score: 0.927693
+cifar10:0.4-instance | Epoch [ 21/ 75] Iter[  1/934]	  loss: 0.40cifar10:0.4-instance | Epoch [ 21/ 75] Iter[ 51/934]	  loss: 0.49cifar10:0.4-instance | Epoch [ 21/ 75] Iter[101/934]	  loss: 0.36cifar10:0.4-instance | Epoch [ 21/ 75] Iter[151/934]	  loss: 0.52cifar10:0.4-instance | Epoch [ 21/ 75] Iter[201/934]	  loss: 0.69cifar10:0.4-instance | Epoch [ 21/ 75] Iter[251/934]	  loss: 0.57cifar10:0.4-instance | Epoch [ 21/ 75] Iter[301/934]	  loss: 0.51cifar10:0.4-instance | Epoch [ 21/ 75] Iter[351/934]	  loss: 0.50cifar10:0.4-instance | Epoch [ 21/ 75] Iter[401/934]	  loss: 0.40cifar10:0.4-instance | Epoch [ 21/ 75] Iter[451/934]	  loss: 0.56cifar10:0.4-instance | Epoch [ 21/ 75] Iter[501/934]	  loss: 0.45cifar10:0.4-instance | Epoch [ 21/ 75] Iter[551/934]	  loss: 0.42cifar10:0.4-instance | Epoch [ 21/ 75] Iter[601/934]	  loss: 0.49cifar10:0.4-instance | Epoch [ 21/ 75] Iter[651/934]	  loss: 0.58cifar10:0.4-instance | Epoch [ 21/ 75] Iter[701/934]	  loss: 0.51cifar10:0.4-instance | Epoch [ 21/ 75] Iter[751/934]	  loss: 0.36cifar10:0.4-instance | Epoch [ 21/ 75] Iter[801/934]	  loss: 0.47cifar10:0.4-instance | Epoch [ 21/ 75] Iter[851/934]	  loss: 0.56cifar10:0.4-instance | Epoch [ 21/ 75] Iter[901/934]	  loss: 0.42
+| Test Epoch 21	 Accuracy: 79.62% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 22 | Accuracy on train set: 52.68% 
+labeled data has a size of 29916, f-score: 0.929469
+cifar10:0.4-instance | Epoch [ 22/ 75] Iter[  1/935]	  loss: 0.63cifar10:0.4-instance | Epoch [ 22/ 75] Iter[ 51/935]	  loss: 0.35cifar10:0.4-instance | Epoch [ 22/ 75] Iter[101/935]	  loss: 0.43cifar10:0.4-instance | Epoch [ 22/ 75] Iter[151/935]	  loss: 0.48cifar10:0.4-instance | Epoch [ 22/ 75] Iter[201/935]	  loss: 0.46cifar10:0.4-instance | Epoch [ 22/ 75] Iter[251/935]	  loss: 0.28cifar10:0.4-instance | Epoch [ 22/ 75] Iter[301/935]	  loss: 0.40cifar10:0.4-instance | Epoch [ 22/ 75] Iter[351/935]	  loss: 0.75cifar10:0.4-instance | Epoch [ 22/ 75] Iter[401/935]	  loss: 0.69cifar10:0.4-instance | Epoch [ 22/ 75] Iter[451/935]	  loss: 0.32cifar10:0.4-instance | Epoch [ 22/ 75] Iter[501/935]	  loss: 0.39cifar10:0.4-instance | Epoch [ 22/ 75] Iter[551/935]	  loss: 0.50cifar10:0.4-instance | Epoch [ 22/ 75] Iter[601/935]	  loss: 0.51cifar10:0.4-instance | Epoch [ 22/ 75] Iter[651/935]	  loss: 0.48cifar10:0.4-instance | Epoch [ 22/ 75] Iter[701/935]	  loss: 0.57cifar10:0.4-instance | Epoch [ 22/ 75] Iter[751/935]	  loss: 0.55cifar10:0.4-instance | Epoch [ 22/ 75] Iter[801/935]	  loss: 0.46cifar10:0.4-instance | Epoch [ 22/ 75] Iter[851/935]	  loss: 0.48cifar10:0.4-instance | Epoch [ 22/ 75] Iter[901/935]	  loss: 0.48
+| Test Epoch 22	 Accuracy: 78.39% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 23 | Accuracy on train set: 52.82% 
+labeled data has a size of 30101, f-score: 0.925584
+cifar10:0.4-instance | Epoch [ 23/ 75] Iter[  1/941]	  loss: 0.63cifar10:0.4-instance | Epoch [ 23/ 75] Iter[ 51/941]	  loss: 0.44cifar10:0.4-instance | Epoch [ 23/ 75] Iter[101/941]	  loss: 0.49cifar10:0.4-instance | Epoch [ 23/ 75] Iter[151/941]	  loss: 0.31cifar10:0.4-instance | Epoch [ 23/ 75] Iter[201/941]	  loss: 0.44cifar10:0.4-instance | Epoch [ 23/ 75] Iter[251/941]	  loss: 0.42cifar10:0.4-instance | Epoch [ 23/ 75] Iter[301/941]	  loss: 0.64cifar10:0.4-instance | Epoch [ 23/ 75] Iter[351/941]	  loss: 0.50cifar10:0.4-instance | Epoch [ 23/ 75] Iter[401/941]	  loss: 0.55cifar10:0.4-instance | Epoch [ 23/ 75] Iter[451/941]	  loss: 0.41cifar10:0.4-instance | Epoch [ 23/ 75] Iter[501/941]	  loss: 0.62cifar10:0.4-instance | Epoch [ 23/ 75] Iter[551/941]	  loss: 0.44cifar10:0.4-instance | Epoch [ 23/ 75] Iter[601/941]	  loss: 0.42cifar10:0.4-instance | Epoch [ 23/ 75] Iter[651/941]	  loss: 0.30cifar10:0.4-instance | Epoch [ 23/ 75] Iter[701/941]	  loss: 0.70cifar10:0.4-instance | Epoch [ 23/ 75] Iter[751/941]	  loss: 0.42cifar10:0.4-instance | Epoch [ 23/ 75] Iter[801/941]	  loss: 0.48cifar10:0.4-instance | Epoch [ 23/ 75] Iter[851/941]	  loss: 0.57cifar10:0.4-instance | Epoch [ 23/ 75] Iter[901/941]	  loss: 0.83
+| Test Epoch 23	 Accuracy: 80.75% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 24 | Accuracy on train set: 53.67% 
+labeled data has a size of 30124, f-score: 0.926105
+cifar10:0.4-instance | Epoch [ 24/ 75] Iter[  1/942]	  loss: 0.29cifar10:0.4-instance | Epoch [ 24/ 75] Iter[ 51/942]	  loss: 0.33cifar10:0.4-instance | Epoch [ 24/ 75] Iter[101/942]	  loss: 0.41cifar10:0.4-instance | Epoch [ 24/ 75] Iter[151/942]	  loss: 0.37cifar10:0.4-instance | Epoch [ 24/ 75] Iter[201/942]	  loss: 0.46cifar10:0.4-instance | Epoch [ 24/ 75] Iter[251/942]	  loss: 0.72cifar10:0.4-instance | Epoch [ 24/ 75] Iter[301/942]	  loss: 0.59cifar10:0.4-instance | Epoch [ 24/ 75] Iter[351/942]	  loss: 0.56cifar10:0.4-instance | Epoch [ 24/ 75] Iter[401/942]	  loss: 0.42cifar10:0.4-instance | Epoch [ 24/ 75] Iter[451/942]	  loss: 0.46cifar10:0.4-instance | Epoch [ 24/ 75] Iter[501/942]	  loss: 0.45cifar10:0.4-instance | Epoch [ 24/ 75] Iter[551/942]	  loss: 0.35cifar10:0.4-instance | Epoch [ 24/ 75] Iter[601/942]	  loss: 0.48cifar10:0.4-instance | Epoch [ 24/ 75] Iter[651/942]	  loss: 0.61cifar10:0.4-instance | Epoch [ 24/ 75] Iter[701/942]	  loss: 0.32cifar10:0.4-instance | Epoch [ 24/ 75] Iter[751/942]	  loss: 0.37cifar10:0.4-instance | Epoch [ 24/ 75] Iter[801/942]	  loss: 0.61cifar10:0.4-instance | Epoch [ 24/ 75] Iter[851/942]	  loss: 0.58cifar10:0.4-instance | Epoch [ 24/ 75] Iter[901/942]	  loss: 0.64
+| Test Epoch 24	 Accuracy: 78.94% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 25 | Accuracy on train set: 52.87% 
+labeled data has a size of 30012, f-score: 0.923697
+cifar10:0.4-instance | Epoch [ 25/ 75] Iter[  1/938]	  loss: 0.49cifar10:0.4-instance | Epoch [ 25/ 75] Iter[ 51/938]	  loss: 0.66cifar10:0.4-instance | Epoch [ 25/ 75] Iter[101/938]	  loss: 0.38cifar10:0.4-instance | Epoch [ 25/ 75] Iter[151/938]	  loss: 0.27cifar10:0.4-instance | Epoch [ 25/ 75] Iter[201/938]	  loss: 0.56cifar10:0.4-instance | Epoch [ 25/ 75] Iter[251/938]	  loss: 0.47cifar10:0.4-instance | Epoch [ 25/ 75] Iter[301/938]	  loss: 0.55cifar10:0.4-instance | Epoch [ 25/ 75] Iter[351/938]	  loss: 0.60cifar10:0.4-instance | Epoch [ 25/ 75] Iter[401/938]	  loss: 0.40cifar10:0.4-instance | Epoch [ 25/ 75] Iter[451/938]	  loss: 0.62cifar10:0.4-instance | Epoch [ 25/ 75] Iter[501/938]	  loss: 0.53cifar10:0.4-instance | Epoch [ 25/ 75] Iter[551/938]	  loss: 0.64cifar10:0.4-instance | Epoch [ 25/ 75] Iter[601/938]	  loss: 0.35cifar10:0.4-instance | Epoch [ 25/ 75] Iter[651/938]	  loss: 0.53cifar10:0.4-instance | Epoch [ 25/ 75] Iter[701/938]	  loss: 0.47cifar10:0.4-instance | Epoch [ 25/ 75] Iter[751/938]	  loss: 0.47cifar10:0.4-instance | Epoch [ 25/ 75] Iter[801/938]	  loss: 0.65cifar10:0.4-instance | Epoch [ 25/ 75] Iter[851/938]	  loss: 0.53cifar10:0.4-instance | Epoch [ 25/ 75] Iter[901/938]	  loss: 0.67
+| Test Epoch 25	 Accuracy: 79.54% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 26 | Accuracy on train set: 52.92% 
+labeled data has a size of 29875, f-score: 0.928837
+cifar10:0.4-instance | Epoch [ 26/ 75] Iter[  1/934]	  loss: 0.54cifar10:0.4-instance | Epoch [ 26/ 75] Iter[ 51/934]	  loss: 0.49cifar10:0.4-instance | Epoch [ 26/ 75] Iter[101/934]	  loss: 0.45cifar10:0.4-instance | Epoch [ 26/ 75] Iter[151/934]	  loss: 0.67cifar10:0.4-instance | Epoch [ 26/ 75] Iter[201/934]	  loss: 0.73cifar10:0.4-instance | Epoch [ 26/ 75] Iter[251/934]	  loss: 0.69cifar10:0.4-instance | Epoch [ 26/ 75] Iter[301/934]	  loss: 0.55cifar10:0.4-instance | Epoch [ 26/ 75] Iter[351/934]	  loss: 0.41cifar10:0.4-instance | Epoch [ 26/ 75] Iter[401/934]	  loss: 0.59cifar10:0.4-instance | Epoch [ 26/ 75] Iter[451/934]	  loss: 0.63cifar10:0.4-instance | Epoch [ 26/ 75] Iter[501/934]	  loss: 0.40cifar10:0.4-instance | Epoch [ 26/ 75] Iter[551/934]	  loss: 0.64cifar10:0.4-instance | Epoch [ 26/ 75] Iter[601/934]	  loss: 0.58cifar10:0.4-instance | Epoch [ 26/ 75] Iter[651/934]	  loss: 0.44cifar10:0.4-instance | Epoch [ 26/ 75] Iter[701/934]	  loss: 0.49cifar10:0.4-instance | Epoch [ 26/ 75] Iter[751/934]	  loss: 0.59cifar10:0.4-instance | Epoch [ 26/ 75] Iter[801/934]	  loss: 0.35cifar10:0.4-instance | Epoch [ 26/ 75] Iter[851/934]	  loss: 0.47cifar10:0.4-instance | Epoch [ 26/ 75] Iter[901/934]	  loss: 0.64
+| Test Epoch 26	 Accuracy: 82.33% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 27 | Accuracy on train set: 54.03% 
+labeled data has a size of 30207, f-score: 0.930380
+cifar10:0.4-instance | Epoch [ 27/ 75] Iter[  1/944]	  loss: 0.31cifar10:0.4-instance | Epoch [ 27/ 75] Iter[ 51/944]	  loss: 0.45cifar10:0.4-instance | Epoch [ 27/ 75] Iter[101/944]	  loss: 0.35cifar10:0.4-instance | Epoch [ 27/ 75] Iter[151/944]	  loss: 0.35cifar10:0.4-instance | Epoch [ 27/ 75] Iter[201/944]	  loss: 0.33cifar10:0.4-instance | Epoch [ 27/ 75] Iter[251/944]	  loss: 0.54cifar10:0.4-instance | Epoch [ 27/ 75] Iter[301/944]	  loss: 0.73cifar10:0.4-instance | Epoch [ 27/ 75] Iter[351/944]	  loss: 0.70cifar10:0.4-instance | Epoch [ 27/ 75] Iter[401/944]	  loss: 0.47cifar10:0.4-instance | Epoch [ 27/ 75] Iter[451/944]	  loss: 0.61cifar10:0.4-instance | Epoch [ 27/ 75] Iter[501/944]	  loss: 0.41cifar10:0.4-instance | Epoch [ 27/ 75] Iter[551/944]	  loss: 0.47cifar10:0.4-instance | Epoch [ 27/ 75] Iter[601/944]	  loss: 0.77cifar10:0.4-instance | Epoch [ 27/ 75] Iter[651/944]	  loss: 0.55cifar10:0.4-instance | Epoch [ 27/ 75] Iter[701/944]	  loss: 0.40cifar10:0.4-instance | Epoch [ 27/ 75] Iter[751/944]	  loss: 0.89cifar10:0.4-instance | Epoch [ 27/ 75] Iter[801/944]	  loss: 0.41cifar10:0.4-instance | Epoch [ 27/ 75] Iter[851/944]	  loss: 0.49cifar10:0.4-instance | Epoch [ 27/ 75] Iter[901/944]	  loss: 0.32
+| Test Epoch 27	 Accuracy: 79.51% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 28 | Accuracy on train set: 52.76% 
+labeled data has a size of 30325, f-score: 0.931674
+cifar10:0.4-instance | Epoch [ 28/ 75] Iter[  1/948]	  loss: 0.39cifar10:0.4-instance | Epoch [ 28/ 75] Iter[ 51/948]	  loss: 0.52cifar10:0.4-instance | Epoch [ 28/ 75] Iter[101/948]	  loss: 0.53cifar10:0.4-instance | Epoch [ 28/ 75] Iter[151/948]	  loss: 0.53cifar10:0.4-instance | Epoch [ 28/ 75] Iter[201/948]	  loss: 0.36cifar10:0.4-instance | Epoch [ 28/ 75] Iter[251/948]	  loss: 0.45cifar10:0.4-instance | Epoch [ 28/ 75] Iter[301/948]	  loss: 0.63cifar10:0.4-instance | Epoch [ 28/ 75] Iter[351/948]	  loss: 0.60cifar10:0.4-instance | Epoch [ 28/ 75] Iter[401/948]	  loss: 0.79cifar10:0.4-instance | Epoch [ 28/ 75] Iter[451/948]	  loss: 0.52cifar10:0.4-instance | Epoch [ 28/ 75] Iter[501/948]	  loss: 0.63cifar10:0.4-instance | Epoch [ 28/ 75] Iter[551/948]	  loss: 0.47cifar10:0.4-instance | Epoch [ 28/ 75] Iter[601/948]	  loss: 0.55cifar10:0.4-instance | Epoch [ 28/ 75] Iter[651/948]	  loss: 0.39cifar10:0.4-instance | Epoch [ 28/ 75] Iter[701/948]	  loss: 0.46cifar10:0.4-instance | Epoch [ 28/ 75] Iter[751/948]	  loss: 0.81cifar10:0.4-instance | Epoch [ 28/ 75] Iter[801/948]	  loss: 0.46cifar10:0.4-instance | Epoch [ 28/ 75] Iter[851/948]	  loss: 0.42cifar10:0.4-instance | Epoch [ 28/ 75] Iter[901/948]	  loss: 0.70
+| Test Epoch 28	 Accuracy: 82.13% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 29 | Accuracy on train set: 54.55% 
+labeled data has a size of 30308, f-score: 0.933549
+cifar10:0.4-instance | Epoch [ 29/ 75] Iter[  1/948]	  loss: 0.50cifar10:0.4-instance | Epoch [ 29/ 75] Iter[ 51/948]	  loss: 0.48cifar10:0.4-instance | Epoch [ 29/ 75] Iter[101/948]	  loss: 0.55cifar10:0.4-instance | Epoch [ 29/ 75] Iter[151/948]	  loss: 0.35cifar10:0.4-instance | Epoch [ 29/ 75] Iter[201/948]	  loss: 0.53cifar10:0.4-instance | Epoch [ 29/ 75] Iter[251/948]	  loss: 0.36cifar10:0.4-instance | Epoch [ 29/ 75] Iter[301/948]	  loss: 0.61cifar10:0.4-instance | Epoch [ 29/ 75] Iter[351/948]	  loss: 0.46cifar10:0.4-instance | Epoch [ 29/ 75] Iter[401/948]	  loss: 0.54cifar10:0.4-instance | Epoch [ 29/ 75] Iter[451/948]	  loss: 0.45cifar10:0.4-instance | Epoch [ 29/ 75] Iter[501/948]	  loss: 0.40cifar10:0.4-instance | Epoch [ 29/ 75] Iter[551/948]	  loss: 0.45cifar10:0.4-instance | Epoch [ 29/ 75] Iter[601/948]	  loss: 0.50cifar10:0.4-instance | Epoch [ 29/ 75] Iter[651/948]	  loss: 0.87cifar10:0.4-instance | Epoch [ 29/ 75] Iter[701/948]	  loss: 0.45cifar10:0.4-instance | Epoch [ 29/ 75] Iter[751/948]	  loss: 0.58cifar10:0.4-instance | Epoch [ 29/ 75] Iter[801/948]	  loss: 0.58cifar10:0.4-instance | Epoch [ 29/ 75] Iter[851/948]	  loss: 0.37cifar10:0.4-instance | Epoch [ 29/ 75] Iter[901/948]	  loss: 0.44
+| Test Epoch 29	 Accuracy: 81.36% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 30 | Accuracy on train set: 53.68% 
+labeled data has a size of 30186, f-score: 0.931955
+cifar10:0.4-instance | Epoch [ 30/ 75] Iter[  1/944]	  loss: 0.44cifar10:0.4-instance | Epoch [ 30/ 75] Iter[ 51/944]	  loss: 0.67cifar10:0.4-instance | Epoch [ 30/ 75] Iter[101/944]	  loss: 0.65cifar10:0.4-instance | Epoch [ 30/ 75] Iter[151/944]	  loss: 0.61cifar10:0.4-instance | Epoch [ 30/ 75] Iter[201/944]	  loss: 0.35cifar10:0.4-instance | Epoch [ 30/ 75] Iter[251/944]	  loss: 0.23cifar10:0.4-instance | Epoch [ 30/ 75] Iter[301/944]	  loss: 0.57cifar10:0.4-instance | Epoch [ 30/ 75] Iter[351/944]	  loss: 0.43cifar10:0.4-instance | Epoch [ 30/ 75] Iter[401/944]	  loss: 0.34cifar10:0.4-instance | Epoch [ 30/ 75] Iter[451/944]	  loss: 0.50cifar10:0.4-instance | Epoch [ 30/ 75] Iter[501/944]	  loss: 0.51cifar10:0.4-instance | Epoch [ 30/ 75] Iter[551/944]	  loss: 0.37cifar10:0.4-instance | Epoch [ 30/ 75] Iter[601/944]	  loss: 0.55cifar10:0.4-instance | Epoch [ 30/ 75] Iter[651/944]	  loss: 0.34cifar10:0.4-instance | Epoch [ 30/ 75] Iter[701/944]	  loss: 0.38cifar10:0.4-instance | Epoch [ 30/ 75] Iter[751/944]	  loss: 0.46cifar10:0.4-instance | Epoch [ 30/ 75] Iter[801/944]	  loss: 0.53cifar10:0.4-instance | Epoch [ 30/ 75] Iter[851/944]	  loss: 0.56cifar10:0.4-instance | Epoch [ 30/ 75] Iter[901/944]	  loss: 0.35
+| Test Epoch 30	 Accuracy: 82.24% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 31 | Accuracy on train set: 53.91% 
+labeled data has a size of 30427, f-score: 0.934400
+cifar10:0.4-instance | Epoch [ 31/ 75] Iter[  1/951]	  loss: 0.43cifar10:0.4-instance | Epoch [ 31/ 75] Iter[ 51/951]	  loss: 0.33cifar10:0.4-instance | Epoch [ 31/ 75] Iter[101/951]	  loss: 0.40cifar10:0.4-instance | Epoch [ 31/ 75] Iter[151/951]	  loss: 0.29cifar10:0.4-instance | Epoch [ 31/ 75] Iter[201/951]	  loss: 0.53cifar10:0.4-instance | Epoch [ 31/ 75] Iter[251/951]	  loss: 0.62cifar10:0.4-instance | Epoch [ 31/ 75] Iter[301/951]	  loss: 0.57cifar10:0.4-instance | Epoch [ 31/ 75] Iter[351/951]	  loss: 0.41cifar10:0.4-instance | Epoch [ 31/ 75] Iter[401/951]	  loss: 0.49cifar10:0.4-instance | Epoch [ 31/ 75] Iter[451/951]	  loss: 0.41cifar10:0.4-instance | Epoch [ 31/ 75] Iter[501/951]	  loss: 0.56cifar10:0.4-instance | Epoch [ 31/ 75] Iter[551/951]	  loss: 0.59cifar10:0.4-instance | Epoch [ 31/ 75] Iter[601/951]	  loss: 0.41cifar10:0.4-instance | Epoch [ 31/ 75] Iter[651/951]	  loss: 0.63cifar10:0.4-instance | Epoch [ 31/ 75] Iter[701/951]	  loss: 0.50cifar10:0.4-instance | Epoch [ 31/ 75] Iter[751/951]	  loss: 0.57cifar10:0.4-instance | Epoch [ 31/ 75] Iter[801/951]	  loss: 0.42cifar10:0.4-instance | Epoch [ 31/ 75] Iter[851/951]	  loss: 0.47cifar10:0.4-instance | Epoch [ 31/ 75] Iter[901/951]	  loss: 0.46cifar10:0.4-instance | Epoch [ 31/ 75] Iter[951/951]	  loss: 0.57
+| Test Epoch 31	 Accuracy: 82.42% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 32 | Accuracy on train set: 54.41% 
+labeled data has a size of 30496, f-score: 0.935500
+cifar10:0.4-instance | Epoch [ 32/ 75] Iter[  1/954]	  loss: 0.37cifar10:0.4-instance | Epoch [ 32/ 75] Iter[ 51/954]	  loss: 0.40cifar10:0.4-instance | Epoch [ 32/ 75] Iter[101/954]	  loss: 0.30cifar10:0.4-instance | Epoch [ 32/ 75] Iter[151/954]	  loss: 0.65cifar10:0.4-instance | Epoch [ 32/ 75] Iter[201/954]	  loss: 0.48cifar10:0.4-instance | Epoch [ 32/ 75] Iter[251/954]	  loss: 0.63cifar10:0.4-instance | Epoch [ 32/ 75] Iter[301/954]	  loss: 0.35cifar10:0.4-instance | Epoch [ 32/ 75] Iter[351/954]	  loss: 0.40cifar10:0.4-instance | Epoch [ 32/ 75] Iter[401/954]	  loss: 0.54cifar10:0.4-instance | Epoch [ 32/ 75] Iter[451/954]	  loss: 0.52cifar10:0.4-instance | Epoch [ 32/ 75] Iter[501/954]	  loss: 0.53cifar10:0.4-instance | Epoch [ 32/ 75] Iter[551/954]	  loss: 0.74cifar10:0.4-instance | Epoch [ 32/ 75] Iter[601/954]	  loss: 0.40cifar10:0.4-instance | Epoch [ 32/ 75] Iter[651/954]	  loss: 0.60cifar10:0.4-instance | Epoch [ 32/ 75] Iter[701/954]	  loss: 0.51cifar10:0.4-instance | Epoch [ 32/ 75] Iter[751/954]	  loss: 0.55cifar10:0.4-instance | Epoch [ 32/ 75] Iter[801/954]	  loss: 0.57cifar10:0.4-instance | Epoch [ 32/ 75] Iter[851/954]	  loss: 0.51cifar10:0.4-instance | Epoch [ 32/ 75] Iter[901/954]	  loss: 0.51cifar10:0.4-instance | Epoch [ 32/ 75] Iter[951/954]	  loss: 0.74
+| Test Epoch 32	 Accuracy: 82.32% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 33 | Accuracy on train set: 54.52% 
+labeled data has a size of 30294, f-score: 0.938998
+cifar10:0.4-instance | Epoch [ 33/ 75] Iter[  1/947]	  loss: 0.42cifar10:0.4-instance | Epoch [ 33/ 75] Iter[ 51/947]	  loss: 0.34cifar10:0.4-instance | Epoch [ 33/ 75] Iter[101/947]	  loss: 0.68cifar10:0.4-instance | Epoch [ 33/ 75] Iter[151/947]	  loss: 0.58cifar10:0.4-instance | Epoch [ 33/ 75] Iter[201/947]	  loss: 0.41cifar10:0.4-instance | Epoch [ 33/ 75] Iter[251/947]	  loss: 0.37cifar10:0.4-instance | Epoch [ 33/ 75] Iter[301/947]	  loss: 0.34cifar10:0.4-instance | Epoch [ 33/ 75] Iter[351/947]	  loss: 0.56cifar10:0.4-instance | Epoch [ 33/ 75] Iter[401/947]	  loss: 0.51cifar10:0.4-instance | Epoch [ 33/ 75] Iter[451/947]	  loss: 0.65cifar10:0.4-instance | Epoch [ 33/ 75] Iter[501/947]	  loss: 0.40cifar10:0.4-instance | Epoch [ 33/ 75] Iter[551/947]	  loss: 0.42cifar10:0.4-instance | Epoch [ 33/ 75] Iter[601/947]	  loss: 0.38cifar10:0.4-instance | Epoch [ 33/ 75] Iter[651/947]	  loss: 0.53cifar10:0.4-instance | Epoch [ 33/ 75] Iter[701/947]	  loss: 0.57cifar10:0.4-instance | Epoch [ 33/ 75] Iter[751/947]	  loss: 0.53cifar10:0.4-instance | Epoch [ 33/ 75] Iter[801/947]	  loss: 0.30cifar10:0.4-instance | Epoch [ 33/ 75] Iter[851/947]	  loss: 0.63cifar10:0.4-instance | Epoch [ 33/ 75] Iter[901/947]	  loss: 0.38
+| Test Epoch 33	 Accuracy: 83.08% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 34 | Accuracy on train set: 54.58% 
+labeled data has a size of 30480, f-score: 0.938550
+cifar10:0.4-instance | Epoch [ 34/ 75] Iter[  1/953]	  loss: 0.27cifar10:0.4-instance | Epoch [ 34/ 75] Iter[ 51/953]	  loss: 0.49cifar10:0.4-instance | Epoch [ 34/ 75] Iter[101/953]	  loss: 0.49cifar10:0.4-instance | Epoch [ 34/ 75] Iter[151/953]	  loss: 0.60cifar10:0.4-instance | Epoch [ 34/ 75] Iter[201/953]	  loss: 0.38cifar10:0.4-instance | Epoch [ 34/ 75] Iter[251/953]	  loss: 0.50cifar10:0.4-instance | Epoch [ 34/ 75] Iter[301/953]	  loss: 0.31cifar10:0.4-instance | Epoch [ 34/ 75] Iter[351/953]	  loss: 0.56cifar10:0.4-instance | Epoch [ 34/ 75] Iter[401/953]	  loss: 0.48cifar10:0.4-instance | Epoch [ 34/ 75] Iter[451/953]	  loss: 0.33cifar10:0.4-instance | Epoch [ 34/ 75] Iter[501/953]	  loss: 0.49cifar10:0.4-instance | Epoch [ 34/ 75] Iter[551/953]	  loss: 0.44cifar10:0.4-instance | Epoch [ 34/ 75] Iter[601/953]	  loss: 0.46cifar10:0.4-instance | Epoch [ 34/ 75] Iter[651/953]	  loss: 0.37cifar10:0.4-instance | Epoch [ 34/ 75] Iter[701/953]	  loss: 0.37cifar10:0.4-instance | Epoch [ 34/ 75] Iter[751/953]	  loss: 0.43cifar10:0.4-instance | Epoch [ 34/ 75] Iter[801/953]	  loss: 0.68cifar10:0.4-instance | Epoch [ 34/ 75] Iter[851/953]	  loss: 0.41cifar10:0.4-instance | Epoch [ 34/ 75] Iter[901/953]	  loss: 0.49cifar10:0.4-instance | Epoch [ 34/ 75] Iter[951/953]	  loss: 0.38
+| Test Epoch 34	 Accuracy: 81.22% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 35 | Accuracy on train set: 54.35% 
+labeled data has a size of 30620, f-score: 0.935630
+cifar10:0.4-instance | Epoch [ 35/ 75] Iter[  1/957]	  loss: 0.60cifar10:0.4-instance | Epoch [ 35/ 75] Iter[ 51/957]	  loss: 0.43cifar10:0.4-instance | Epoch [ 35/ 75] Iter[101/957]	  loss: 0.56cifar10:0.4-instance | Epoch [ 35/ 75] Iter[151/957]	  loss: 0.45cifar10:0.4-instance | Epoch [ 35/ 75] Iter[201/957]	  loss: 0.62cifar10:0.4-instance | Epoch [ 35/ 75] Iter[251/957]	  loss: 0.38cifar10:0.4-instance | Epoch [ 35/ 75] Iter[301/957]	  loss: 0.42cifar10:0.4-instance | Epoch [ 35/ 75] Iter[351/957]	  loss: 0.54cifar10:0.4-instance | Epoch [ 35/ 75] Iter[401/957]	  loss: 0.51cifar10:0.4-instance | Epoch [ 35/ 75] Iter[451/957]	  loss: 0.48cifar10:0.4-instance | Epoch [ 35/ 75] Iter[501/957]	  loss: 0.53cifar10:0.4-instance | Epoch [ 35/ 75] Iter[551/957]	  loss: 0.37cifar10:0.4-instance | Epoch [ 35/ 75] Iter[601/957]	  loss: 0.43cifar10:0.4-instance | Epoch [ 35/ 75] Iter[651/957]	  loss: 0.42cifar10:0.4-instance | Epoch [ 35/ 75] Iter[701/957]	  loss: 0.41cifar10:0.4-instance | Epoch [ 35/ 75] Iter[751/957]	  loss: 0.39cifar10:0.4-instance | Epoch [ 35/ 75] Iter[801/957]	  loss: 0.46cifar10:0.4-instance | Epoch [ 35/ 75] Iter[851/957]	  loss: 0.31cifar10:0.4-instance | Epoch [ 35/ 75] Iter[901/957]	  loss: 0.49cifar10:0.4-instance | Epoch [ 35/ 75] Iter[951/957]	  loss: 0.53
+| Test Epoch 35	 Accuracy: 81.44% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 36 | Accuracy on train set: 54.00% 
+labeled data has a size of 30456, f-score: 0.937155
+cifar10:0.4-instance | Epoch [ 36/ 75] Iter[  1/952]	  loss: 0.39cifar10:0.4-instance | Epoch [ 36/ 75] Iter[ 51/952]	  loss: 0.49cifar10:0.4-instance | Epoch [ 36/ 75] Iter[101/952]	  loss: 0.40cifar10:0.4-instance | Epoch [ 36/ 75] Iter[151/952]	  loss: 0.58cifar10:0.4-instance | Epoch [ 36/ 75] Iter[201/952]	  loss: 0.39cifar10:0.4-instance | Epoch [ 36/ 75] Iter[251/952]	  loss: 0.34cifar10:0.4-instance | Epoch [ 36/ 75] Iter[301/952]	  loss: 0.58cifar10:0.4-instance | Epoch [ 36/ 75] Iter[351/952]	  loss: 0.42cifar10:0.4-instance | Epoch [ 36/ 75] Iter[401/952]	  loss: 0.43cifar10:0.4-instance | Epoch [ 36/ 75] Iter[451/952]	  loss: 0.33cifar10:0.4-instance | Epoch [ 36/ 75] Iter[501/952]	  loss: 0.82cifar10:0.4-instance | Epoch [ 36/ 75] Iter[551/952]	  loss: 0.45cifar10:0.4-instance | Epoch [ 36/ 75] Iter[601/952]	  loss: 0.54cifar10:0.4-instance | Epoch [ 36/ 75] Iter[651/952]	  loss: 0.49cifar10:0.4-instance | Epoch [ 36/ 75] Iter[701/952]	  loss: 0.51cifar10:0.4-instance | Epoch [ 36/ 75] Iter[751/952]	  loss: 0.50cifar10:0.4-instance | Epoch [ 36/ 75] Iter[801/952]	  loss: 0.40cifar10:0.4-instance | Epoch [ 36/ 75] Iter[851/952]	  loss: 0.55cifar10:0.4-instance | Epoch [ 36/ 75] Iter[901/952]	  loss: 0.44cifar10:0.4-instance | Epoch [ 36/ 75] Iter[951/952]	  loss: 0.48
+| Test Epoch 36	 Accuracy: 82.70% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 37 | Accuracy on train set: 54.80% 
+labeled data has a size of 30562, f-score: 0.936621
+cifar10:0.4-instance | Epoch [ 37/ 75] Iter[  1/956]	  loss: 0.30cifar10:0.4-instance | Epoch [ 37/ 75] Iter[ 51/956]	  loss: 0.40cifar10:0.4-instance | Epoch [ 37/ 75] Iter[101/956]	  loss: 0.35cifar10:0.4-instance | Epoch [ 37/ 75] Iter[151/956]	  loss: 0.38cifar10:0.4-instance | Epoch [ 37/ 75] Iter[201/956]	  loss: 0.50cifar10:0.4-instance | Epoch [ 37/ 75] Iter[251/956]	  loss: 0.33cifar10:0.4-instance | Epoch [ 37/ 75] Iter[301/956]	  loss: 0.47cifar10:0.4-instance | Epoch [ 37/ 75] Iter[351/956]	  loss: 0.55cifar10:0.4-instance | Epoch [ 37/ 75] Iter[401/956]	  loss: 0.78cifar10:0.4-instance | Epoch [ 37/ 75] Iter[451/956]	  loss: 0.45cifar10:0.4-instance | Epoch [ 37/ 75] Iter[501/956]	  loss: 0.48cifar10:0.4-instance | Epoch [ 37/ 75] Iter[551/956]	  loss: 0.67cifar10:0.4-instance | Epoch [ 37/ 75] Iter[601/956]	  loss: 0.44cifar10:0.4-instance | Epoch [ 37/ 75] Iter[651/956]	  loss: 0.67cifar10:0.4-instance | Epoch [ 37/ 75] Iter[701/956]	  loss: 0.53cifar10:0.4-instance | Epoch [ 37/ 75] Iter[751/956]	  loss: 0.22cifar10:0.4-instance | Epoch [ 37/ 75] Iter[801/956]	  loss: 0.42cifar10:0.4-instance | Epoch [ 37/ 75] Iter[851/956]	  loss: 0.44cifar10:0.4-instance | Epoch [ 37/ 75] Iter[901/956]	  loss: 0.31cifar10:0.4-instance | Epoch [ 37/ 75] Iter[951/956]	  loss: 0.72
+| Test Epoch 37	 Accuracy: 79.87% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 38 | Accuracy on train set: 53.80% 
+labeled data has a size of 30794, f-score: 0.930441
+cifar10:0.4-instance | Epoch [ 38/ 75] Iter[  1/963]	  loss: 0.72cifar10:0.4-instance | Epoch [ 38/ 75] Iter[ 51/963]	  loss: 0.46cifar10:0.4-instance | Epoch [ 38/ 75] Iter[101/963]	  loss: 0.30cifar10:0.4-instance | Epoch [ 38/ 75] Iter[151/963]	  loss: 0.36cifar10:0.4-instance | Epoch [ 38/ 75] Iter[201/963]	  loss: 0.55cifar10:0.4-instance | Epoch [ 38/ 75] Iter[251/963]	  loss: 0.26cifar10:0.4-instance | Epoch [ 38/ 75] Iter[301/963]	  loss: 0.31cifar10:0.4-instance | Epoch [ 38/ 75] Iter[351/963]	  loss: 0.68cifar10:0.4-instance | Epoch [ 38/ 75] Iter[401/963]	  loss: 0.28cifar10:0.4-instance | Epoch [ 38/ 75] Iter[451/963]	  loss: 0.67cifar10:0.4-instance | Epoch [ 38/ 75] Iter[501/963]	  loss: 0.44cifar10:0.4-instance | Epoch [ 38/ 75] Iter[551/963]	  loss: 0.34cifar10:0.4-instance | Epoch [ 38/ 75] Iter[601/963]	  loss: 0.64cifar10:0.4-instance | Epoch [ 38/ 75] Iter[651/963]	  loss: 0.41cifar10:0.4-instance | Epoch [ 38/ 75] Iter[701/963]	  loss: 0.44cifar10:0.4-instance | Epoch [ 38/ 75] Iter[751/963]	  loss: 0.46cifar10:0.4-instance | Epoch [ 38/ 75] Iter[801/963]	  loss: 0.24cifar10:0.4-instance | Epoch [ 38/ 75] Iter[851/963]	  loss: 0.88cifar10:0.4-instance | Epoch [ 38/ 75] Iter[901/963]	  loss: 0.59cifar10:0.4-instance | Epoch [ 38/ 75] Iter[951/963]	  loss: 0.91
+| Test Epoch 38	 Accuracy: 82.43% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 39 | Accuracy on train set: 55.14% 
+labeled data has a size of 30870, f-score: 0.930547
+cifar10:0.4-instance | Epoch [ 39/ 75] Iter[  1/965]	  loss: 0.51cifar10:0.4-instance | Epoch [ 39/ 75] Iter[ 51/965]	  loss: 0.40cifar10:0.4-instance | Epoch [ 39/ 75] Iter[101/965]	  loss: 0.37cifar10:0.4-instance | Epoch [ 39/ 75] Iter[151/965]	  loss: 0.83cifar10:0.4-instance | Epoch [ 39/ 75] Iter[201/965]	  loss: 0.63cifar10:0.4-instance | Epoch [ 39/ 75] Iter[251/965]	  loss: 0.59cifar10:0.4-instance | Epoch [ 39/ 75] Iter[301/965]	  loss: 0.81cifar10:0.4-instance | Epoch [ 39/ 75] Iter[351/965]	  loss: 0.57cifar10:0.4-instance | Epoch [ 39/ 75] Iter[401/965]	  loss: 0.61cifar10:0.4-instance | Epoch [ 39/ 75] Iter[451/965]	  loss: 0.35cifar10:0.4-instance | Epoch [ 39/ 75] Iter[501/965]	  loss: 0.43cifar10:0.4-instance | Epoch [ 39/ 75] Iter[551/965]	  loss: 0.28cifar10:0.4-instance | Epoch [ 39/ 75] Iter[601/965]	  loss: 0.38cifar10:0.4-instance | Epoch [ 39/ 75] Iter[651/965]	  loss: 0.61cifar10:0.4-instance | Epoch [ 39/ 75] Iter[701/965]	  loss: 0.43cifar10:0.4-instance | Epoch [ 39/ 75] Iter[751/965]	  loss: 0.39cifar10:0.4-instance | Epoch [ 39/ 75] Iter[801/965]	  loss: 0.49cifar10:0.4-instance | Epoch [ 39/ 75] Iter[851/965]	  loss: 0.68cifar10:0.4-instance | Epoch [ 39/ 75] Iter[901/965]	  loss: 0.51cifar10:0.4-instance | Epoch [ 39/ 75] Iter[951/965]	  loss: 0.32
+| Test Epoch 39	 Accuracy: 80.43% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 40 | Accuracy on train set: 52.79% 
+labeled data has a size of 30677, f-score: 0.933468
+cifar10:0.4-instance | Epoch [ 40/ 75] Iter[  1/959]	  loss: 0.44cifar10:0.4-instance | Epoch [ 40/ 75] Iter[ 51/959]	  loss: 0.69cifar10:0.4-instance | Epoch [ 40/ 75] Iter[101/959]	  loss: 0.76cifar10:0.4-instance | Epoch [ 40/ 75] Iter[151/959]	  loss: 0.43cifar10:0.4-instance | Epoch [ 40/ 75] Iter[201/959]	  loss: 0.44cifar10:0.4-instance | Epoch [ 40/ 75] Iter[251/959]	  loss: 0.47cifar10:0.4-instance | Epoch [ 40/ 75] Iter[301/959]	  loss: 0.57cifar10:0.4-instance | Epoch [ 40/ 75] Iter[351/959]	  loss: 0.54cifar10:0.4-instance | Epoch [ 40/ 75] Iter[401/959]	  loss: 0.30cifar10:0.4-instance | Epoch [ 40/ 75] Iter[451/959]	  loss: 0.51cifar10:0.4-instance | Epoch [ 40/ 75] Iter[501/959]	  loss: 0.52cifar10:0.4-instance | Epoch [ 40/ 75] Iter[551/959]	  loss: 0.47cifar10:0.4-instance | Epoch [ 40/ 75] Iter[601/959]	  loss: 0.41cifar10:0.4-instance | Epoch [ 40/ 75] Iter[651/959]	  loss: 0.47cifar10:0.4-instance | Epoch [ 40/ 75] Iter[701/959]	  loss: 0.46cifar10:0.4-instance | Epoch [ 40/ 75] Iter[751/959]	  loss: 0.79cifar10:0.4-instance | Epoch [ 40/ 75] Iter[801/959]	  loss: 0.54cifar10:0.4-instance | Epoch [ 40/ 75] Iter[851/959]	  loss: 0.48cifar10:0.4-instance | Epoch [ 40/ 75] Iter[901/959]	  loss: 0.49cifar10:0.4-instance | Epoch [ 40/ 75] Iter[951/959]	  loss: 0.48
+| Test Epoch 40	 Accuracy: 82.49% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 41 | Accuracy on train set: 54.54% 
+labeled data has a size of 30415, f-score: 0.942035
+cifar10:0.4-instance | Epoch [ 41/ 75] Iter[  1/951]	  loss: 0.47cifar10:0.4-instance | Epoch [ 41/ 75] Iter[ 51/951]	  loss: 0.51cifar10:0.4-instance | Epoch [ 41/ 75] Iter[101/951]	  loss: 0.44cifar10:0.4-instance | Epoch [ 41/ 75] Iter[151/951]	  loss: 0.29cifar10:0.4-instance | Epoch [ 41/ 75] Iter[201/951]	  loss: 0.33cifar10:0.4-instance | Epoch [ 41/ 75] Iter[251/951]	  loss: 0.40cifar10:0.4-instance | Epoch [ 41/ 75] Iter[301/951]	  loss: 0.57cifar10:0.4-instance | Epoch [ 41/ 75] Iter[351/951]	  loss: 0.21cifar10:0.4-instance | Epoch [ 41/ 75] Iter[401/951]	  loss: 0.62cifar10:0.4-instance | Epoch [ 41/ 75] Iter[451/951]	  loss: 0.67cifar10:0.4-instance | Epoch [ 41/ 75] Iter[501/951]	  loss: 0.70cifar10:0.4-instance | Epoch [ 41/ 75] Iter[551/951]	  loss: 0.39cifar10:0.4-instance | Epoch [ 41/ 75] Iter[601/951]	  loss: 0.41cifar10:0.4-instance | Epoch [ 41/ 75] Iter[651/951]	  loss: 0.59cifar10:0.4-instance | Epoch [ 41/ 75] Iter[701/951]	  loss: 0.33cifar10:0.4-instance | Epoch [ 41/ 75] Iter[751/951]	  loss: 0.43cifar10:0.4-instance | Epoch [ 41/ 75] Iter[801/951]	  loss: 0.48cifar10:0.4-instance | Epoch [ 41/ 75] Iter[851/951]	  loss: 0.49cifar10:0.4-instance | Epoch [ 41/ 75] Iter[901/951]	  loss: 0.33cifar10:0.4-instance | Epoch [ 41/ 75] Iter[951/951]	  loss: 0.40
+| Test Epoch 41	 Accuracy: 83.26% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 42 | Accuracy on train set: 55.41% 
+labeled data has a size of 30447, f-score: 0.941768
+cifar10:0.4-instance | Epoch [ 42/ 75] Iter[  1/952]	  loss: 0.30cifar10:0.4-instance | Epoch [ 42/ 75] Iter[ 51/952]	  loss: 0.24cifar10:0.4-instance | Epoch [ 42/ 75] Iter[101/952]	  loss: 0.36cifar10:0.4-instance | Epoch [ 42/ 75] Iter[151/952]	  loss: 0.40cifar10:0.4-instance | Epoch [ 42/ 75] Iter[201/952]	  loss: 0.55cifar10:0.4-instance | Epoch [ 42/ 75] Iter[251/952]	  loss: 0.36cifar10:0.4-instance | Epoch [ 42/ 75] Iter[301/952]	  loss: 0.60cifar10:0.4-instance | Epoch [ 42/ 75] Iter[351/952]	  loss: 0.87cifar10:0.4-instance | Epoch [ 42/ 75] Iter[401/952]	  loss: 0.59cifar10:0.4-instance | Epoch [ 42/ 75] Iter[451/952]	  loss: 0.42cifar10:0.4-instance | Epoch [ 42/ 75] Iter[501/952]	  loss: 0.35cifar10:0.4-instance | Epoch [ 42/ 75] Iter[551/952]	  loss: 0.40cifar10:0.4-instance | Epoch [ 42/ 75] Iter[601/952]	  loss: 0.45cifar10:0.4-instance | Epoch [ 42/ 75] Iter[651/952]	  loss: 0.31cifar10:0.4-instance | Epoch [ 42/ 75] Iter[701/952]	  loss: 0.59cifar10:0.4-instance | Epoch [ 42/ 75] Iter[751/952]	  loss: 0.47cifar10:0.4-instance | Epoch [ 42/ 75] Iter[801/952]	  loss: 0.64cifar10:0.4-instance | Epoch [ 42/ 75] Iter[851/952]	  loss: 0.84cifar10:0.4-instance | Epoch [ 42/ 75] Iter[901/952]	  loss: 0.61cifar10:0.4-instance | Epoch [ 42/ 75] Iter[951/952]	  loss: 0.37
+| Test Epoch 42	 Accuracy: 79.84% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 43 | Accuracy on train set: 53.19% 
+labeled data has a size of 30690, f-score: 0.936787
+cifar10:0.4-instance | Epoch [ 43/ 75] Iter[  1/960]	  loss: 0.42cifar10:0.4-instance | Epoch [ 43/ 75] Iter[ 51/960]	  loss: 0.45cifar10:0.4-instance | Epoch [ 43/ 75] Iter[101/960]	  loss: 0.31cifar10:0.4-instance | Epoch [ 43/ 75] Iter[151/960]	  loss: 0.68cifar10:0.4-instance | Epoch [ 43/ 75] Iter[201/960]	  loss: 0.44cifar10:0.4-instance | Epoch [ 43/ 75] Iter[251/960]	  loss: 0.30cifar10:0.4-instance | Epoch [ 43/ 75] Iter[301/960]	  loss: 0.32cifar10:0.4-instance | Epoch [ 43/ 75] Iter[351/960]	  loss: 0.55cifar10:0.4-instance | Epoch [ 43/ 75] Iter[401/960]	  loss: 0.51cifar10:0.4-instance | Epoch [ 43/ 75] Iter[451/960]	  loss: 0.54cifar10:0.4-instance | Epoch [ 43/ 75] Iter[501/960]	  loss: 0.40cifar10:0.4-instance | Epoch [ 43/ 75] Iter[551/960]	  loss: 0.48cifar10:0.4-instance | Epoch [ 43/ 75] Iter[601/960]	  loss: 0.58cifar10:0.4-instance | Epoch [ 43/ 75] Iter[651/960]	  loss: 0.35cifar10:0.4-instance | Epoch [ 43/ 75] Iter[701/960]	  loss: 0.61cifar10:0.4-instance | Epoch [ 43/ 75] Iter[751/960]	  loss: 0.28cifar10:0.4-instance | Epoch [ 43/ 75] Iter[801/960]	  loss: 0.33cifar10:0.4-instance | Epoch [ 43/ 75] Iter[851/960]	  loss: 0.66cifar10:0.4-instance | Epoch [ 43/ 75] Iter[901/960]	  loss: 0.38cifar10:0.4-instance | Epoch [ 43/ 75] Iter[951/960]	  loss: 0.41
+| Test Epoch 43	 Accuracy: 84.41% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 44 | Accuracy on train set: 55.81% 
+labeled data has a size of 30665, f-score: 0.938236
+cifar10:0.4-instance | Epoch [ 44/ 75] Iter[  1/959]	  loss: 0.43cifar10:0.4-instance | Epoch [ 44/ 75] Iter[ 51/959]	  loss: 0.48cifar10:0.4-instance | Epoch [ 44/ 75] Iter[101/959]	  loss: 0.49cifar10:0.4-instance | Epoch [ 44/ 75] Iter[151/959]	  loss: 0.38cifar10:0.4-instance | Epoch [ 44/ 75] Iter[201/959]	  loss: 0.59cifar10:0.4-instance | Epoch [ 44/ 75] Iter[251/959]	  loss: 0.44cifar10:0.4-instance | Epoch [ 44/ 75] Iter[301/959]	  loss: 0.36cifar10:0.4-instance | Epoch [ 44/ 75] Iter[351/959]	  loss: 0.30cifar10:0.4-instance | Epoch [ 44/ 75] Iter[401/959]	  loss: 0.28cifar10:0.4-instance | Epoch [ 44/ 75] Iter[451/959]	  loss: 0.37cifar10:0.4-instance | Epoch [ 44/ 75] Iter[501/959]	  loss: 0.56cifar10:0.4-instance | Epoch [ 44/ 75] Iter[551/959]	  loss: 0.31cifar10:0.4-instance | Epoch [ 44/ 75] Iter[601/959]	  loss: 0.61cifar10:0.4-instance | Epoch [ 44/ 75] Iter[651/959]	  loss: 0.62cifar10:0.4-instance | Epoch [ 44/ 75] Iter[701/959]	  loss: 0.57cifar10:0.4-instance | Epoch [ 44/ 75] Iter[751/959]	  loss: 0.50cifar10:0.4-instance | Epoch [ 44/ 75] Iter[801/959]	  loss: 0.81cifar10:0.4-instance | Epoch [ 44/ 75] Iter[851/959]	  loss: 0.44cifar10:0.4-instance | Epoch [ 44/ 75] Iter[901/959]	  loss: 0.35cifar10:0.4-instance | Epoch [ 44/ 75] Iter[951/959]	  loss: 0.51
+| Test Epoch 44	 Accuracy: 82.64% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 45 | Accuracy on train set: 54.96% 
+labeled data has a size of 30661, f-score: 0.937738
+cifar10:0.4-instance | Epoch [ 45/ 75] Iter[  1/959]	  loss: 0.53cifar10:0.4-instance | Epoch [ 45/ 75] Iter[ 51/959]	  loss: 0.58cifar10:0.4-instance | Epoch [ 45/ 75] Iter[101/959]	  loss: 0.36cifar10:0.4-instance | Epoch [ 45/ 75] Iter[151/959]	  loss: 0.55cifar10:0.4-instance | Epoch [ 45/ 75] Iter[201/959]	  loss: 0.46cifar10:0.4-instance | Epoch [ 45/ 75] Iter[251/959]	  loss: 0.42cifar10:0.4-instance | Epoch [ 45/ 75] Iter[301/959]	  loss: 0.40cifar10:0.4-instance | Epoch [ 45/ 75] Iter[351/959]	  loss: 0.33cifar10:0.4-instance | Epoch [ 45/ 75] Iter[401/959]	  loss: 0.49cifar10:0.4-instance | Epoch [ 45/ 75] Iter[451/959]	  loss: 0.30cifar10:0.4-instance | Epoch [ 45/ 75] Iter[501/959]	  loss: 0.40cifar10:0.4-instance | Epoch [ 45/ 75] Iter[551/959]	  loss: 0.49cifar10:0.4-instance | Epoch [ 45/ 75] Iter[601/959]	  loss: 0.70cifar10:0.4-instance | Epoch [ 45/ 75] Iter[651/959]	  loss: 0.43cifar10:0.4-instance | Epoch [ 45/ 75] Iter[701/959]	  loss: 0.46cifar10:0.4-instance | Epoch [ 45/ 75] Iter[751/959]	  loss: 0.59cifar10:0.4-instance | Epoch [ 45/ 75] Iter[801/959]	  loss: 0.59cifar10:0.4-instance | Epoch [ 45/ 75] Iter[851/959]	  loss: 0.48cifar10:0.4-instance | Epoch [ 45/ 75] Iter[901/959]	  loss: 0.29cifar10:0.4-instance | Epoch [ 45/ 75] Iter[951/959]	  loss: 0.53
+| Test Epoch 45	 Accuracy: 81.73% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 46 | Accuracy on train set: 54.62% 
+labeled data has a size of 30592, f-score: 0.939167
+cifar10:0.4-instance | Epoch [ 46/ 75] Iter[  1/957]	  loss: 0.63cifar10:0.4-instance | Epoch [ 46/ 75] Iter[ 51/957]	  loss: 0.32cifar10:0.4-instance | Epoch [ 46/ 75] Iter[101/957]	  loss: 0.36cifar10:0.4-instance | Epoch [ 46/ 75] Iter[151/957]	  loss: 0.44cifar10:0.4-instance | Epoch [ 46/ 75] Iter[201/957]	  loss: 0.53cifar10:0.4-instance | Epoch [ 46/ 75] Iter[251/957]	  loss: 0.49cifar10:0.4-instance | Epoch [ 46/ 75] Iter[301/957]	  loss: 0.59cifar10:0.4-instance | Epoch [ 46/ 75] Iter[351/957]	  loss: 0.84cifar10:0.4-instance | Epoch [ 46/ 75] Iter[401/957]	  loss: 0.83cifar10:0.4-instance | Epoch [ 46/ 75] Iter[451/957]	  loss: 0.33cifar10:0.4-instance | Epoch [ 46/ 75] Iter[501/957]	  loss: 0.71cifar10:0.4-instance | Epoch [ 46/ 75] Iter[551/957]	  loss: 0.40cifar10:0.4-instance | Epoch [ 46/ 75] Iter[601/957]	  loss: 0.40cifar10:0.4-instance | Epoch [ 46/ 75] Iter[651/957]	  loss: 0.43cifar10:0.4-instance | Epoch [ 46/ 75] Iter[701/957]	  loss: 0.51cifar10:0.4-instance | Epoch [ 46/ 75] Iter[751/957]	  loss: 0.40cifar10:0.4-instance | Epoch [ 46/ 75] Iter[801/957]	  loss: 0.52cifar10:0.4-instance | Epoch [ 46/ 75] Iter[851/957]	  loss: 0.41cifar10:0.4-instance | Epoch [ 46/ 75] Iter[901/957]	  loss: 0.76cifar10:0.4-instance | Epoch [ 46/ 75] Iter[951/957]	  loss: 0.83
+| Test Epoch 46	 Accuracy: 82.59% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 47 | Accuracy on train set: 54.73% 
+labeled data has a size of 30641, f-score: 0.938318
+cifar10:0.4-instance | Epoch [ 47/ 75] Iter[  1/958]	  loss: 0.24cifar10:0.4-instance | Epoch [ 47/ 75] Iter[ 51/958]	  loss: 0.42cifar10:0.4-instance | Epoch [ 47/ 75] Iter[101/958]	  loss: 0.52cifar10:0.4-instance | Epoch [ 47/ 75] Iter[151/958]	  loss: 0.60cifar10:0.4-instance | Epoch [ 47/ 75] Iter[201/958]	  loss: 0.37cifar10:0.4-instance | Epoch [ 47/ 75] Iter[251/958]	  loss: 0.44cifar10:0.4-instance | Epoch [ 47/ 75] Iter[301/958]	  loss: 0.21cifar10:0.4-instance | Epoch [ 47/ 75] Iter[351/958]	  loss: 0.31cifar10:0.4-instance | Epoch [ 47/ 75] Iter[401/958]	  loss: 0.32cifar10:0.4-instance | Epoch [ 47/ 75] Iter[451/958]	  loss: 0.52cifar10:0.4-instance | Epoch [ 47/ 75] Iter[501/958]	  loss: 0.49cifar10:0.4-instance | Epoch [ 47/ 75] Iter[551/958]	  loss: 0.56cifar10:0.4-instance | Epoch [ 47/ 75] Iter[601/958]	  loss: 0.51cifar10:0.4-instance | Epoch [ 47/ 75] Iter[651/958]	  loss: 0.28cifar10:0.4-instance | Epoch [ 47/ 75] Iter[701/958]	  loss: 0.39cifar10:0.4-instance | Epoch [ 47/ 75] Iter[751/958]	  loss: 0.46cifar10:0.4-instance | Epoch [ 47/ 75] Iter[801/958]	  loss: 0.72cifar10:0.4-instance | Epoch [ 47/ 75] Iter[851/958]	  loss: 0.46cifar10:0.4-instance | Epoch [ 47/ 75] Iter[901/958]	  loss: 0.52cifar10:0.4-instance | Epoch [ 47/ 75] Iter[951/958]	  loss: 0.44
+| Test Epoch 47	 Accuracy: 82.54% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 48 | Accuracy on train set: 55.37% 
+labeled data has a size of 30726, f-score: 0.937838
+cifar10:0.4-instance | Epoch [ 48/ 75] Iter[  1/961]	  loss: 0.43cifar10:0.4-instance | Epoch [ 48/ 75] Iter[ 51/961]	  loss: 0.41cifar10:0.4-instance | Epoch [ 48/ 75] Iter[101/961]	  loss: 0.42cifar10:0.4-instance | Epoch [ 48/ 75] Iter[151/961]	  loss: 0.60cifar10:0.4-instance | Epoch [ 48/ 75] Iter[201/961]	  loss: 0.34cifar10:0.4-instance | Epoch [ 48/ 75] Iter[251/961]	  loss: 0.41cifar10:0.4-instance | Epoch [ 48/ 75] Iter[301/961]	  loss: 0.39cifar10:0.4-instance | Epoch [ 48/ 75] Iter[351/961]	  loss: 0.52cifar10:0.4-instance | Epoch [ 48/ 75] Iter[401/961]	  loss: 0.30cifar10:0.4-instance | Epoch [ 48/ 75] Iter[451/961]	  loss: 0.46cifar10:0.4-instance | Epoch [ 48/ 75] Iter[501/961]	  loss: 0.82cifar10:0.4-instance | Epoch [ 48/ 75] Iter[551/961]	  loss: 0.54cifar10:0.4-instance | Epoch [ 48/ 75] Iter[601/961]	  loss: 0.36cifar10:0.4-instance | Epoch [ 48/ 75] Iter[651/961]	  loss: 0.71cifar10:0.4-instance | Epoch [ 48/ 75] Iter[701/961]	  loss: 0.55cifar10:0.4-instance | Epoch [ 48/ 75] Iter[751/961]	  loss: 0.40cifar10:0.4-instance | Epoch [ 48/ 75] Iter[801/961]	  loss: 0.46cifar10:0.4-instance | Epoch [ 48/ 75] Iter[851/961]	  loss: 0.46cifar10:0.4-instance | Epoch [ 48/ 75] Iter[901/961]	  loss: 0.46cifar10:0.4-instance | Epoch [ 48/ 75] Iter[951/961]	  loss: 0.34
+| Test Epoch 48	 Accuracy: 82.52% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 49 | Accuracy on train set: 54.22% 
+labeled data has a size of 30717, f-score: 0.941270
+cifar10:0.4-instance | Epoch [ 49/ 75] Iter[  1/960]	  loss: 0.50cifar10:0.4-instance | Epoch [ 49/ 75] Iter[ 51/960]	  loss: 0.73cifar10:0.4-instance | Epoch [ 49/ 75] Iter[101/960]	  loss: 0.63cifar10:0.4-instance | Epoch [ 49/ 75] Iter[151/960]	  loss: 0.52cifar10:0.4-instance | Epoch [ 49/ 75] Iter[201/960]	  loss: 0.53cifar10:0.4-instance | Epoch [ 49/ 75] Iter[251/960]	  loss: 0.53cifar10:0.4-instance | Epoch [ 49/ 75] Iter[301/960]	  loss: 0.51cifar10:0.4-instance | Epoch [ 49/ 75] Iter[351/960]	  loss: 0.35cifar10:0.4-instance | Epoch [ 49/ 75] Iter[401/960]	  loss: 0.47cifar10:0.4-instance | Epoch [ 49/ 75] Iter[451/960]	  loss: 0.42cifar10:0.4-instance | Epoch [ 49/ 75] Iter[501/960]	  loss: 0.48cifar10:0.4-instance | Epoch [ 49/ 75] Iter[551/960]	  loss: 0.79cifar10:0.4-instance | Epoch [ 49/ 75] Iter[601/960]	  loss: 0.53cifar10:0.4-instance | Epoch [ 49/ 75] Iter[651/960]	  loss: 0.62cifar10:0.4-instance | Epoch [ 49/ 75] Iter[701/960]	  loss: 0.28cifar10:0.4-instance | Epoch [ 49/ 75] Iter[751/960]	  loss: 0.73cifar10:0.4-instance | Epoch [ 49/ 75] Iter[801/960]	  loss: 0.45cifar10:0.4-instance | Epoch [ 49/ 75] Iter[851/960]	  loss: 0.37cifar10:0.4-instance | Epoch [ 49/ 75] Iter[901/960]	  loss: 0.49cifar10:0.4-instance | Epoch [ 49/ 75] Iter[951/960]	  loss: 0.63
+| Test Epoch 49	 Accuracy: 85.25% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 50 | Accuracy on train set: 56.70% 
+labeled data has a size of 30768, f-score: 0.941433
+cifar10:0.4-instance | Epoch [ 50/ 75] Iter[  1/962]	  loss: 0.40cifar10:0.4-instance | Epoch [ 50/ 75] Iter[ 51/962]	  loss: 0.47cifar10:0.4-instance | Epoch [ 50/ 75] Iter[101/962]	  loss: 0.44cifar10:0.4-instance | Epoch [ 50/ 75] Iter[151/962]	  loss: 0.54cifar10:0.4-instance | Epoch [ 50/ 75] Iter[201/962]	  loss: 0.52cifar10:0.4-instance | Epoch [ 50/ 75] Iter[251/962]	  loss: 0.53cifar10:0.4-instance | Epoch [ 50/ 75] Iter[301/962]	  loss: 0.49cifar10:0.4-instance | Epoch [ 50/ 75] Iter[351/962]	  loss: 0.51cifar10:0.4-instance | Epoch [ 50/ 75] Iter[401/962]	  loss: 0.61cifar10:0.4-instance | Epoch [ 50/ 75] Iter[451/962]	  loss: 0.28cifar10:0.4-instance | Epoch [ 50/ 75] Iter[501/962]	  loss: 0.37cifar10:0.4-instance | Epoch [ 50/ 75] Iter[551/962]	  loss: 0.43cifar10:0.4-instance | Epoch [ 50/ 75] Iter[601/962]	  loss: 0.50cifar10:0.4-instance | Epoch [ 50/ 75] Iter[651/962]	  loss: 0.37cifar10:0.4-instance | Epoch [ 50/ 75] Iter[701/962]	  loss: 0.70cifar10:0.4-instance | Epoch [ 50/ 75] Iter[751/962]	  loss: 0.60cifar10:0.4-instance | Epoch [ 50/ 75] Iter[801/962]	  loss: 0.41cifar10:0.4-instance | Epoch [ 50/ 75] Iter[851/962]	  loss: 0.66cifar10:0.4-instance | Epoch [ 50/ 75] Iter[901/962]	  loss: 0.39cifar10:0.4-instance | Epoch [ 50/ 75] Iter[951/962]	  loss: 0.42
+| Test Epoch 50	 Accuracy: 82.37% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 51 | Accuracy on train set: 55.11% 
+labeled data has a size of 30911, f-score: 0.937919
+cifar10:0.4-instance | Epoch [ 51/ 75] Iter[  1/966]	  loss: 0.46cifar10:0.4-instance | Epoch [ 51/ 75] Iter[ 51/966]	  loss: 0.41cifar10:0.4-instance | Epoch [ 51/ 75] Iter[101/966]	  loss: 0.38cifar10:0.4-instance | Epoch [ 51/ 75] Iter[151/966]	  loss: 0.71cifar10:0.4-instance | Epoch [ 51/ 75] Iter[201/966]	  loss: 0.38cifar10:0.4-instance | Epoch [ 51/ 75] Iter[251/966]	  loss: 0.50cifar10:0.4-instance | Epoch [ 51/ 75] Iter[301/966]	  loss: 0.40cifar10:0.4-instance | Epoch [ 51/ 75] Iter[351/966]	  loss: 0.38cifar10:0.4-instance | Epoch [ 51/ 75] Iter[401/966]	  loss: 0.54cifar10:0.4-instance | Epoch [ 51/ 75] Iter[451/966]	  loss: 0.47cifar10:0.4-instance | Epoch [ 51/ 75] Iter[501/966]	  loss: 0.67cifar10:0.4-instance | Epoch [ 51/ 75] Iter[551/966]	  loss: 0.67cifar10:0.4-instance | Epoch [ 51/ 75] Iter[601/966]	  loss: 0.51cifar10:0.4-instance | Epoch [ 51/ 75] Iter[651/966]	  loss: 0.54cifar10:0.4-instance | Epoch [ 51/ 75] Iter[701/966]	  loss: 0.40cifar10:0.4-instance | Epoch [ 51/ 75] Iter[751/966]	  loss: 0.28cifar10:0.4-instance | Epoch [ 51/ 75] Iter[801/966]	  loss: 0.35cifar10:0.4-instance | Epoch [ 51/ 75] Iter[851/966]	  loss: 0.54cifar10:0.4-instance | Epoch [ 51/ 75] Iter[901/966]	  loss: 0.41cifar10:0.4-instance | Epoch [ 51/ 75] Iter[951/966]	  loss: 0.60
+| Test Epoch 51	 Accuracy: 80.50% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 52 | Accuracy on train set: 53.64% 
+labeled data has a size of 30802, f-score: 0.935459
+cifar10:0.4-instance | Epoch [ 52/ 75] Iter[  1/963]	  loss: 0.51cifar10:0.4-instance | Epoch [ 52/ 75] Iter[ 51/963]	  loss: 0.59cifar10:0.4-instance | Epoch [ 52/ 75] Iter[101/963]	  loss: 0.44cifar10:0.4-instance | Epoch [ 52/ 75] Iter[151/963]	  loss: 0.49cifar10:0.4-instance | Epoch [ 52/ 75] Iter[201/963]	  loss: 0.57cifar10:0.4-instance | Epoch [ 52/ 75] Iter[251/963]	  loss: 0.47cifar10:0.4-instance | Epoch [ 52/ 75] Iter[301/963]	  loss: 0.56cifar10:0.4-instance | Epoch [ 52/ 75] Iter[351/963]	  loss: 0.57cifar10:0.4-instance | Epoch [ 52/ 75] Iter[401/963]	  loss: 0.64cifar10:0.4-instance | Epoch [ 52/ 75] Iter[451/963]	  loss: 0.28cifar10:0.4-instance | Epoch [ 52/ 75] Iter[501/963]	  loss: 0.66cifar10:0.4-instance | Epoch [ 52/ 75] Iter[551/963]	  loss: 0.51cifar10:0.4-instance | Epoch [ 52/ 75] Iter[601/963]	  loss: 0.52cifar10:0.4-instance | Epoch [ 52/ 75] Iter[651/963]	  loss: 0.31cifar10:0.4-instance | Epoch [ 52/ 75] Iter[701/963]	  loss: 0.55cifar10:0.4-instance | Epoch [ 52/ 75] Iter[751/963]	  loss: 0.50cifar10:0.4-instance | Epoch [ 52/ 75] Iter[801/963]	  loss: 0.28cifar10:0.4-instance | Epoch [ 52/ 75] Iter[851/963]	  loss: 0.51cifar10:0.4-instance | Epoch [ 52/ 75] Iter[901/963]	  loss: 0.77cifar10:0.4-instance | Epoch [ 52/ 75] Iter[951/963]	  loss: 0.49
+| Test Epoch 52	 Accuracy: 83.59% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 53 | Accuracy on train set: 55.83% 
+labeled data has a size of 30699, f-score: 0.934916
+cifar10:0.4-instance | Epoch [ 53/ 75] Iter[  1/960]	  loss: 0.52cifar10:0.4-instance | Epoch [ 53/ 75] Iter[ 51/960]	  loss: 0.60cifar10:0.4-instance | Epoch [ 53/ 75] Iter[101/960]	  loss: 0.32cifar10:0.4-instance | Epoch [ 53/ 75] Iter[151/960]	  loss: 0.50cifar10:0.4-instance | Epoch [ 53/ 75] Iter[201/960]	  loss: 0.71cifar10:0.4-instance | Epoch [ 53/ 75] Iter[251/960]	  loss: 0.36cifar10:0.4-instance | Epoch [ 53/ 75] Iter[301/960]	  loss: 0.57cifar10:0.4-instance | Epoch [ 53/ 75] Iter[351/960]	  loss: 0.38cifar10:0.4-instance | Epoch [ 53/ 75] Iter[401/960]	  loss: 0.29cifar10:0.4-instance | Epoch [ 53/ 75] Iter[451/960]	  loss: 0.44cifar10:0.4-instance | Epoch [ 53/ 75] Iter[501/960]	  loss: 0.38cifar10:0.4-instance | Epoch [ 53/ 75] Iter[551/960]	  loss: 0.47cifar10:0.4-instance | Epoch [ 53/ 75] Iter[601/960]	  loss: 0.32cifar10:0.4-instance | Epoch [ 53/ 75] Iter[651/960]	  loss: 0.27cifar10:0.4-instance | Epoch [ 53/ 75] Iter[701/960]	  loss: 0.80cifar10:0.4-instance | Epoch [ 53/ 75] Iter[751/960]	  loss: 0.52cifar10:0.4-instance | Epoch [ 53/ 75] Iter[801/960]	  loss: 0.27cifar10:0.4-instance | Epoch [ 53/ 75] Iter[851/960]	  loss: 0.48cifar10:0.4-instance | Epoch [ 53/ 75] Iter[901/960]	  loss: 0.47cifar10:0.4-instance | Epoch [ 53/ 75] Iter[951/960]	  loss: 0.34
+| Test Epoch 53	 Accuracy: 82.75% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 54 | Accuracy on train set: 55.32% 
+labeled data has a size of 30710, f-score: 0.935949
+cifar10:0.4-instance | Epoch [ 54/ 75] Iter[  1/960]	  loss: 0.34cifar10:0.4-instance | Epoch [ 54/ 75] Iter[ 51/960]	  loss: 0.46cifar10:0.4-instance | Epoch [ 54/ 75] Iter[101/960]	  loss: 0.34cifar10:0.4-instance | Epoch [ 54/ 75] Iter[151/960]	  loss: 0.67cifar10:0.4-instance | Epoch [ 54/ 75] Iter[201/960]	  loss: 0.30cifar10:0.4-instance | Epoch [ 54/ 75] Iter[251/960]	  loss: 0.48cifar10:0.4-instance | Epoch [ 54/ 75] Iter[301/960]	  loss: 0.48cifar10:0.4-instance | Epoch [ 54/ 75] Iter[351/960]	  loss: 0.54cifar10:0.4-instance | Epoch [ 54/ 75] Iter[401/960]	  loss: 0.41cifar10:0.4-instance | Epoch [ 54/ 75] Iter[451/960]	  loss: 0.49cifar10:0.4-instance | Epoch [ 54/ 75] Iter[501/960]	  loss: 0.40cifar10:0.4-instance | Epoch [ 54/ 75] Iter[551/960]	  loss: 0.31cifar10:0.4-instance | Epoch [ 54/ 75] Iter[601/960]	  loss: 0.35cifar10:0.4-instance | Epoch [ 54/ 75] Iter[651/960]	  loss: 0.75cifar10:0.4-instance | Epoch [ 54/ 75] Iter[701/960]	  loss: 0.51cifar10:0.4-instance | Epoch [ 54/ 75] Iter[751/960]	  loss: 0.34cifar10:0.4-instance | Epoch [ 54/ 75] Iter[801/960]	  loss: 0.49cifar10:0.4-instance | Epoch [ 54/ 75] Iter[851/960]	  loss: 0.35cifar10:0.4-instance | Epoch [ 54/ 75] Iter[901/960]	  loss: 0.40cifar10:0.4-instance | Epoch [ 54/ 75] Iter[951/960]	  loss: 0.60
+| Test Epoch 54	 Accuracy: 84.13% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 55 | Accuracy on train set: 56.48% 
+labeled data has a size of 30822, f-score: 0.935760
+cifar10:0.4-instance | Epoch [ 55/ 75] Iter[  1/964]	  loss: 0.65cifar10:0.4-instance | Epoch [ 55/ 75] Iter[ 51/964]	  loss: 0.43cifar10:0.4-instance | Epoch [ 55/ 75] Iter[101/964]	  loss: 0.61cifar10:0.4-instance | Epoch [ 55/ 75] Iter[151/964]	  loss: 0.75cifar10:0.4-instance | Epoch [ 55/ 75] Iter[201/964]	  loss: 0.39cifar10:0.4-instance | Epoch [ 55/ 75] Iter[251/964]	  loss: 0.53cifar10:0.4-instance | Epoch [ 55/ 75] Iter[301/964]	  loss: 0.63cifar10:0.4-instance | Epoch [ 55/ 75] Iter[351/964]	  loss: 0.82cifar10:0.4-instance | Epoch [ 55/ 75] Iter[401/964]	  loss: 0.38cifar10:0.4-instance | Epoch [ 55/ 75] Iter[451/964]	  loss: 0.35cifar10:0.4-instance | Epoch [ 55/ 75] Iter[501/964]	  loss: 0.39cifar10:0.4-instance | Epoch [ 55/ 75] Iter[551/964]	  loss: 0.54cifar10:0.4-instance | Epoch [ 55/ 75] Iter[601/964]	  loss: 0.56cifar10:0.4-instance | Epoch [ 55/ 75] Iter[651/964]	  loss: 0.27cifar10:0.4-instance | Epoch [ 55/ 75] Iter[701/964]	  loss: 0.52cifar10:0.4-instance | Epoch [ 55/ 75] Iter[751/964]	  loss: 0.62cifar10:0.4-instance | Epoch [ 55/ 75] Iter[801/964]	  loss: 0.67cifar10:0.4-instance | Epoch [ 55/ 75] Iter[851/964]	  loss: 0.58cifar10:0.4-instance | Epoch [ 55/ 75] Iter[901/964]	  loss: 0.34cifar10:0.4-instance | Epoch [ 55/ 75] Iter[951/964]	  loss: 0.44
+| Test Epoch 55	 Accuracy: 82.82% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 56 | Accuracy on train set: 55.47% 
+labeled data has a size of 30812, f-score: 0.935350
+cifar10:0.4-instance | Epoch [ 56/ 75] Iter[  1/963]	  loss: 0.30cifar10:0.4-instance | Epoch [ 56/ 75] Iter[ 51/963]	  loss: 0.38cifar10:0.4-instance | Epoch [ 56/ 75] Iter[101/963]	  loss: 0.54cifar10:0.4-instance | Epoch [ 56/ 75] Iter[151/963]	  loss: 0.26cifar10:0.4-instance | Epoch [ 56/ 75] Iter[201/963]	  loss: 0.45cifar10:0.4-instance | Epoch [ 56/ 75] Iter[251/963]	  loss: 0.79cifar10:0.4-instance | Epoch [ 56/ 75] Iter[301/963]	  loss: 0.40cifar10:0.4-instance | Epoch [ 56/ 75] Iter[351/963]	  loss: 0.51cifar10:0.4-instance | Epoch [ 56/ 75] Iter[401/963]	  loss: 0.50cifar10:0.4-instance | Epoch [ 56/ 75] Iter[451/963]	  loss: 0.59cifar10:0.4-instance | Epoch [ 56/ 75] Iter[501/963]	  loss: 0.65cifar10:0.4-instance | Epoch [ 56/ 75] Iter[551/963]	  loss: 0.40cifar10:0.4-instance | Epoch [ 56/ 75] Iter[601/963]	  loss: 0.45cifar10:0.4-instance | Epoch [ 56/ 75] Iter[651/963]	  loss: 0.66cifar10:0.4-instance | Epoch [ 56/ 75] Iter[701/963]	  loss: 0.50cifar10:0.4-instance | Epoch [ 56/ 75] Iter[751/963]	  loss: 0.50cifar10:0.4-instance | Epoch [ 56/ 75] Iter[801/963]	  loss: 0.36cifar10:0.4-instance | Epoch [ 56/ 75] Iter[851/963]	  loss: 0.33cifar10:0.4-instance | Epoch [ 56/ 75] Iter[901/963]	  loss: 0.30cifar10:0.4-instance | Epoch [ 56/ 75] Iter[951/963]	  loss: 0.42
+| Test Epoch 56	 Accuracy: 79.29% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 57 | Accuracy on train set: 53.32% 
+labeled data has a size of 30975, f-score: 0.928814
+cifar10:0.4-instance | Epoch [ 57/ 75] Iter[  1/968]	  loss: 0.49cifar10:0.4-instance | Epoch [ 57/ 75] Iter[ 51/968]	  loss: 0.45cifar10:0.4-instance | Epoch [ 57/ 75] Iter[101/968]	  loss: 0.57cifar10:0.4-instance | Epoch [ 57/ 75] Iter[151/968]	  loss: 0.33cifar10:0.4-instance | Epoch [ 57/ 75] Iter[201/968]	  loss: 0.44cifar10:0.4-instance | Epoch [ 57/ 75] Iter[251/968]	  loss: 0.38cifar10:0.4-instance | Epoch [ 57/ 75] Iter[301/968]	  loss: 0.60cifar10:0.4-instance | Epoch [ 57/ 75] Iter[351/968]	  loss: 0.78cifar10:0.4-instance | Epoch [ 57/ 75] Iter[401/968]	  loss: 0.39cifar10:0.4-instance | Epoch [ 57/ 75] Iter[451/968]	  loss: 0.63cifar10:0.4-instance | Epoch [ 57/ 75] Iter[501/968]	  loss: 0.57cifar10:0.4-instance | Epoch [ 57/ 75] Iter[551/968]	  loss: 0.50cifar10:0.4-instance | Epoch [ 57/ 75] Iter[601/968]	  loss: 0.40cifar10:0.4-instance | Epoch [ 57/ 75] Iter[651/968]	  loss: 0.51cifar10:0.4-instance | Epoch [ 57/ 75] Iter[701/968]	  loss: 0.66cifar10:0.4-instance | Epoch [ 57/ 75] Iter[751/968]	  loss: 0.85cifar10:0.4-instance | Epoch [ 57/ 75] Iter[801/968]	  loss: 0.63cifar10:0.4-instance | Epoch [ 57/ 75] Iter[851/968]	  loss: 0.60cifar10:0.4-instance | Epoch [ 57/ 75] Iter[901/968]	  loss: 0.31cifar10:0.4-instance | Epoch [ 57/ 75] Iter[951/968]	  loss: 0.27
+| Test Epoch 57	 Accuracy: 83.07% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 58 | Accuracy on train set: 55.97% 
+labeled data has a size of 30966, f-score: 0.929342
+cifar10:0.4-instance | Epoch [ 58/ 75] Iter[  1/968]	  loss: 0.26cifar10:0.4-instance | Epoch [ 58/ 75] Iter[ 51/968]	  loss: 0.76cifar10:0.4-instance | Epoch [ 58/ 75] Iter[101/968]	  loss: 0.30cifar10:0.4-instance | Epoch [ 58/ 75] Iter[151/968]	  loss: 0.34cifar10:0.4-instance | Epoch [ 58/ 75] Iter[201/968]	  loss: 0.33cifar10:0.4-instance | Epoch [ 58/ 75] Iter[251/968]	  loss: 0.45cifar10:0.4-instance | Epoch [ 58/ 75] Iter[301/968]	  loss: 0.25cifar10:0.4-instance | Epoch [ 58/ 75] Iter[351/968]	  loss: 0.38cifar10:0.4-instance | Epoch [ 58/ 75] Iter[401/968]	  loss: 0.41cifar10:0.4-instance | Epoch [ 58/ 75] Iter[451/968]	  loss: 0.43cifar10:0.4-instance | Epoch [ 58/ 75] Iter[501/968]	  loss: 0.48cifar10:0.4-instance | Epoch [ 58/ 75] Iter[551/968]	  loss: 0.54cifar10:0.4-instance | Epoch [ 58/ 75] Iter[601/968]	  loss: 0.45cifar10:0.4-instance | Epoch [ 58/ 75] Iter[651/968]	  loss: 0.69cifar10:0.4-instance | Epoch [ 58/ 75] Iter[701/968]	  loss: 0.54cifar10:0.4-instance | Epoch [ 58/ 75] Iter[751/968]	  loss: 0.30cifar10:0.4-instance | Epoch [ 58/ 75] Iter[801/968]	  loss: 0.51cifar10:0.4-instance | Epoch [ 58/ 75] Iter[851/968]	  loss: 0.49cifar10:0.4-instance | Epoch [ 58/ 75] Iter[901/968]	  loss: 0.38cifar10:0.4-instance | Epoch [ 58/ 75] Iter[951/968]	  loss: 0.38
+| Test Epoch 58	 Accuracy: 83.21% 
+
+
+
+============ Train stage | lr = 0.020, T in penalty = 0.200
+Epoch 59 | Accuracy on train set: 56.14% 
+labeled data has a size of 30996, f-score: 0.928346
+cifar10:0.4-instance | Epoch [ 59/ 75] Iter[  1/969]	  loss: 0.46cifar10:0.4-instance | Epoch [ 59/ 75] Iter[ 51/969]	  loss: 0.39cifar10:0.4-instance | Epoch [ 59/ 75] Iter[101/969]	  loss: 0.39cifar10:0.4-instance | Epoch [ 59/ 75] Iter[151/969]	  loss: 0.43cifar10:0.4-instance | Epoch [ 59/ 75] Iter[201/969]	  loss: 0.55cifar10:0.4-instance | Epoch [ 59/ 75] Iter[251/969]	  loss: 0.41cifar10:0.4-instance | Epoch [ 59/ 75] Iter[301/969]	  loss: 0.42cifar10:0.4-instance | Epoch [ 59/ 75] Iter[351/969]	  loss: 0.57cifar10:0.4-instance | Epoch [ 59/ 75] Iter[401/969]	  loss: 0.37cifar10:0.4-instance | Epoch [ 59/ 75] Iter[451/969]	  loss: 0.46cifar10:0.4-instance | Epoch [ 59/ 75] Iter[501/969]	  loss: 0.37cifar10:0.4-instance | Epoch [ 59/ 75] Iter[551/969]	  loss: 0.51cifar10:0.4-instance | Epoch [ 59/ 75] Iter[601/969]	  loss: 0.53cifar10:0.4-instance | Epoch [ 59/ 75] Iter[651/969]	  loss: 0.33cifar10:0.4-instance | Epoch [ 59/ 75] Iter[701/969]	  loss: 0.48cifar10:0.4-instance | Epoch [ 59/ 75] Iter[751/969]	  loss: 0.47cifar10:0.4-instance | Epoch [ 59/ 75] Iter[801/969]	  loss: 0.54cifar10:0.4-instance | Epoch [ 59/ 75] Iter[851/969]	  loss: 0.44cifar10:0.4-instance | Epoch [ 59/ 75] Iter[901/969]	  loss: 0.44cifar10:0.4-instance | Epoch [ 59/ 75] Iter[951/969]	  loss: 0.65
+| Test Epoch 59	 Accuracy: 81.09% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 60 | Accuracy on train set: 55.27% 
+labeled data has a size of 31029, f-score: 0.927938
+cifar10:0.4-instance | Epoch [ 60/ 75] Iter[  1/970]	  loss: 0.41cifar10:0.4-instance | Epoch [ 60/ 75] Iter[ 51/970]	  loss: 0.44cifar10:0.4-instance | Epoch [ 60/ 75] Iter[101/970]	  loss: 0.34cifar10:0.4-instance | Epoch [ 60/ 75] Iter[151/970]	  loss: 0.27cifar10:0.4-instance | Epoch [ 60/ 75] Iter[201/970]	  loss: 0.29cifar10:0.4-instance | Epoch [ 60/ 75] Iter[251/970]	  loss: 0.34cifar10:0.4-instance | Epoch [ 60/ 75] Iter[301/970]	  loss: 0.18cifar10:0.4-instance | Epoch [ 60/ 75] Iter[351/970]	  loss: 0.26cifar10:0.4-instance | Epoch [ 60/ 75] Iter[401/970]	  loss: 0.29cifar10:0.4-instance | Epoch [ 60/ 75] Iter[451/970]	  loss: 0.43cifar10:0.4-instance | Epoch [ 60/ 75] Iter[501/970]	  loss: 0.49cifar10:0.4-instance | Epoch [ 60/ 75] Iter[551/970]	  loss: 0.30cifar10:0.4-instance | Epoch [ 60/ 75] Iter[601/970]	  loss: 0.31cifar10:0.4-instance | Epoch [ 60/ 75] Iter[651/970]	  loss: 0.24cifar10:0.4-instance | Epoch [ 60/ 75] Iter[701/970]	  loss: 0.25cifar10:0.4-instance | Epoch [ 60/ 75] Iter[751/970]	  loss: 0.44cifar10:0.4-instance | Epoch [ 60/ 75] Iter[801/970]	  loss: 0.39cifar10:0.4-instance | Epoch [ 60/ 75] Iter[851/970]	  loss: 0.29cifar10:0.4-instance | Epoch [ 60/ 75] Iter[901/970]	  loss: 0.38cifar10:0.4-instance | Epoch [ 60/ 75] Iter[951/970]	  loss: 0.35
+| Test Epoch 60	 Accuracy: 87.90% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 61 | Accuracy on train set: 59.47% 
+labeled data has a size of 31062, f-score: 0.931073
+cifar10:0.4-instance | Epoch [ 61/ 75] Iter[  1/971]	  loss: 0.34cifar10:0.4-instance | Epoch [ 61/ 75] Iter[ 51/971]	  loss: 0.30cifar10:0.4-instance | Epoch [ 61/ 75] Iter[101/971]	  loss: 0.26cifar10:0.4-instance | Epoch [ 61/ 75] Iter[151/971]	  loss: 0.19cifar10:0.4-instance | Epoch [ 61/ 75] Iter[201/971]	  loss: 0.40cifar10:0.4-instance | Epoch [ 61/ 75] Iter[251/971]	  loss: 0.36cifar10:0.4-instance | Epoch [ 61/ 75] Iter[301/971]	  loss: 0.20cifar10:0.4-instance | Epoch [ 61/ 75] Iter[351/971]	  loss: 0.33cifar10:0.4-instance | Epoch [ 61/ 75] Iter[401/971]	  loss: 0.24cifar10:0.4-instance | Epoch [ 61/ 75] Iter[451/971]	  loss: 0.34cifar10:0.4-instance | Epoch [ 61/ 75] Iter[501/971]	  loss: 0.49cifar10:0.4-instance | Epoch [ 61/ 75] Iter[551/971]	  loss: 0.59cifar10:0.4-instance | Epoch [ 61/ 75] Iter[601/971]	  loss: 0.18cifar10:0.4-instance | Epoch [ 61/ 75] Iter[651/971]	  loss: 0.32cifar10:0.4-instance | Epoch [ 61/ 75] Iter[701/971]	  loss: 0.31cifar10:0.4-instance | Epoch [ 61/ 75] Iter[751/971]	  loss: 0.45cifar10:0.4-instance | Epoch [ 61/ 75] Iter[801/971]	  loss: 0.23cifar10:0.4-instance | Epoch [ 61/ 75] Iter[851/971]	  loss: 0.32cifar10:0.4-instance | Epoch [ 61/ 75] Iter[901/971]	  loss: 0.27cifar10:0.4-instance | Epoch [ 61/ 75] Iter[951/971]	  loss: 0.19
+| Test Epoch 61	 Accuracy: 88.63% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 62 | Accuracy on train set: 59.92% 
+labeled data has a size of 31035, f-score: 0.933430
+cifar10:0.4-instance | Epoch [ 62/ 75] Iter[  1/970]	  loss: 0.18cifar10:0.4-instance | Epoch [ 62/ 75] Iter[ 51/970]	  loss: 0.28cifar10:0.4-instance | Epoch [ 62/ 75] Iter[101/970]	  loss: 0.20cifar10:0.4-instance | Epoch [ 62/ 75] Iter[151/970]	  loss: 0.27cifar10:0.4-instance | Epoch [ 62/ 75] Iter[201/970]	  loss: 0.24cifar10:0.4-instance | Epoch [ 62/ 75] Iter[251/970]	  loss: 0.25cifar10:0.4-instance | Epoch [ 62/ 75] Iter[301/970]	  loss: 0.20cifar10:0.4-instance | Epoch [ 62/ 75] Iter[351/970]	  loss: 0.22cifar10:0.4-instance | Epoch [ 62/ 75] Iter[401/970]	  loss: 0.23cifar10:0.4-instance | Epoch [ 62/ 75] Iter[451/970]	  loss: 0.36cifar10:0.4-instance | Epoch [ 62/ 75] Iter[501/970]	  loss: 0.35cifar10:0.4-instance | Epoch [ 62/ 75] Iter[551/970]	  loss: 0.20cifar10:0.4-instance | Epoch [ 62/ 75] Iter[601/970]	  loss: 0.28cifar10:0.4-instance | Epoch [ 62/ 75] Iter[651/970]	  loss: 0.24cifar10:0.4-instance | Epoch [ 62/ 75] Iter[701/970]	  loss: 0.36cifar10:0.4-instance | Epoch [ 62/ 75] Iter[751/970]	  loss: 0.33cifar10:0.4-instance | Epoch [ 62/ 75] Iter[801/970]	  loss: 0.25cifar10:0.4-instance | Epoch [ 62/ 75] Iter[851/970]	  loss: 0.26cifar10:0.4-instance | Epoch [ 62/ 75] Iter[901/970]	  loss: 0.30cifar10:0.4-instance | Epoch [ 62/ 75] Iter[951/970]	  loss: 0.17
+| Test Epoch 62	 Accuracy: 88.08% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 63 | Accuracy on train set: 60.18% 
+labeled data has a size of 30935, f-score: 0.939227
+cifar10:0.4-instance | Epoch [ 63/ 75] Iter[  1/967]	  loss: 0.21cifar10:0.4-instance | Epoch [ 63/ 75] Iter[ 51/967]	  loss: 0.20cifar10:0.4-instance | Epoch [ 63/ 75] Iter[101/967]	  loss: 0.19cifar10:0.4-instance | Epoch [ 63/ 75] Iter[151/967]	  loss: 0.21cifar10:0.4-instance | Epoch [ 63/ 75] Iter[201/967]	  loss: 0.42cifar10:0.4-instance | Epoch [ 63/ 75] Iter[251/967]	  loss: 0.34cifar10:0.4-instance | Epoch [ 63/ 75] Iter[301/967]	  loss: 0.38cifar10:0.4-instance | Epoch [ 63/ 75] Iter[351/967]	  loss: 0.23cifar10:0.4-instance | Epoch [ 63/ 75] Iter[401/967]	  loss: 0.17cifar10:0.4-instance | Epoch [ 63/ 75] Iter[451/967]	  loss: 0.24cifar10:0.4-instance | Epoch [ 63/ 75] Iter[501/967]	  loss: 0.29cifar10:0.4-instance | Epoch [ 63/ 75] Iter[551/967]	  loss: 0.17cifar10:0.4-instance | Epoch [ 63/ 75] Iter[601/967]	  loss: 0.24cifar10:0.4-instance | Epoch [ 63/ 75] Iter[651/967]	  loss: 0.18cifar10:0.4-instance | Epoch [ 63/ 75] Iter[701/967]	  loss: 0.34cifar10:0.4-instance | Epoch [ 63/ 75] Iter[751/967]	  loss: 0.27cifar10:0.4-instance | Epoch [ 63/ 75] Iter[801/967]	  loss: 0.35cifar10:0.4-instance | Epoch [ 63/ 75] Iter[851/967]	  loss: 0.31cifar10:0.4-instance | Epoch [ 63/ 75] Iter[901/967]	  loss: 0.22cifar10:0.4-instance | Epoch [ 63/ 75] Iter[951/967]	  loss: 0.23
+| Test Epoch 63	 Accuracy: 88.76% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 64 | Accuracy on train set: 60.42% 
+labeled data has a size of 31004, f-score: 0.939201
+cifar10:0.4-instance | Epoch [ 64/ 75] Iter[  1/969]	  loss: 0.24cifar10:0.4-instance | Epoch [ 64/ 75] Iter[ 51/969]	  loss: 0.26cifar10:0.4-instance | Epoch [ 64/ 75] Iter[101/969]	  loss: 0.47cifar10:0.4-instance | Epoch [ 64/ 75] Iter[151/969]	  loss: 0.17cifar10:0.4-instance | Epoch [ 64/ 75] Iter[201/969]	  loss: 0.22cifar10:0.4-instance | Epoch [ 64/ 75] Iter[251/969]	  loss: 0.32cifar10:0.4-instance | Epoch [ 64/ 75] Iter[301/969]	  loss: 0.30cifar10:0.4-instance | Epoch [ 64/ 75] Iter[351/969]	  loss: 0.23cifar10:0.4-instance | Epoch [ 64/ 75] Iter[401/969]	  loss: 0.26cifar10:0.4-instance | Epoch [ 64/ 75] Iter[451/969]	  loss: 0.17cifar10:0.4-instance | Epoch [ 64/ 75] Iter[501/969]	  loss: 0.20cifar10:0.4-instance | Epoch [ 64/ 75] Iter[551/969]	  loss: 0.21cifar10:0.4-instance | Epoch [ 64/ 75] Iter[601/969]	  loss: 0.21cifar10:0.4-instance | Epoch [ 64/ 75] Iter[651/969]	  loss: 0.27cifar10:0.4-instance | Epoch [ 64/ 75] Iter[701/969]	  loss: 0.37cifar10:0.4-instance | Epoch [ 64/ 75] Iter[751/969]	  loss: 0.22cifar10:0.4-instance | Epoch [ 64/ 75] Iter[801/969]	  loss: 0.22cifar10:0.4-instance | Epoch [ 64/ 75] Iter[851/969]	  loss: 0.19cifar10:0.4-instance | Epoch [ 64/ 75] Iter[901/969]	  loss: 0.16cifar10:0.4-instance | Epoch [ 64/ 75] Iter[951/969]	  loss: 0.23
+| Test Epoch 64	 Accuracy: 88.45% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 65 | Accuracy on train set: 60.81% 
+labeled data has a size of 31100, f-score: 0.937942
+cifar10:0.4-instance | Epoch [ 65/ 75] Iter[  1/972]	  loss: 0.43cifar10:0.4-instance | Epoch [ 65/ 75] Iter[ 51/972]	  loss: 0.29cifar10:0.4-instance | Epoch [ 65/ 75] Iter[101/972]	  loss: 0.18cifar10:0.4-instance | Epoch [ 65/ 75] Iter[151/972]	  loss: 0.28cifar10:0.4-instance | Epoch [ 65/ 75] Iter[201/972]	  loss: 0.22cifar10:0.4-instance | Epoch [ 65/ 75] Iter[251/972]	  loss: 0.21cifar10:0.4-instance | Epoch [ 65/ 75] Iter[301/972]	  loss: 0.21cifar10:0.4-instance | Epoch [ 65/ 75] Iter[351/972]	  loss: 0.35cifar10:0.4-instance | Epoch [ 65/ 75] Iter[401/972]	  loss: 0.21cifar10:0.4-instance | Epoch [ 65/ 75] Iter[451/972]	  loss: 0.21cifar10:0.4-instance | Epoch [ 65/ 75] Iter[501/972]	  loss: 0.17cifar10:0.4-instance | Epoch [ 65/ 75] Iter[551/972]	  loss: 0.36cifar10:0.4-instance | Epoch [ 65/ 75] Iter[601/972]	  loss: 0.26cifar10:0.4-instance | Epoch [ 65/ 75] Iter[651/972]	  loss: 0.37cifar10:0.4-instance | Epoch [ 65/ 75] Iter[701/972]	  loss: 0.25cifar10:0.4-instance | Epoch [ 65/ 75] Iter[751/972]	  loss: 0.18cifar10:0.4-instance | Epoch [ 65/ 75] Iter[801/972]	  loss: 0.18cifar10:0.4-instance | Epoch [ 65/ 75] Iter[851/972]	  loss: 0.16cifar10:0.4-instance | Epoch [ 65/ 75] Iter[901/972]	  loss: 0.24cifar10:0.4-instance | Epoch [ 65/ 75] Iter[951/972]	  loss: 0.19
+| Test Epoch 65	 Accuracy: 88.78% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 66 | Accuracy on train set: 61.05% 
+labeled data has a size of 31162, f-score: 0.936975
+cifar10:0.4-instance | Epoch [ 66/ 75] Iter[  1/974]	  loss: 0.18cifar10:0.4-instance | Epoch [ 66/ 75] Iter[ 51/974]	  loss: 0.20cifar10:0.4-instance | Epoch [ 66/ 75] Iter[101/974]	  loss: 0.17cifar10:0.4-instance | Epoch [ 66/ 75] Iter[151/974]	  loss: 0.24cifar10:0.4-instance | Epoch [ 66/ 75] Iter[201/974]	  loss: 0.18cifar10:0.4-instance | Epoch [ 66/ 75] Iter[251/974]	  loss: 0.29cifar10:0.4-instance | Epoch [ 66/ 75] Iter[301/974]	  loss: 0.27cifar10:0.4-instance | Epoch [ 66/ 75] Iter[351/974]	  loss: 0.33cifar10:0.4-instance | Epoch [ 66/ 75] Iter[401/974]	  loss: 0.19cifar10:0.4-instance | Epoch [ 66/ 75] Iter[451/974]	  loss: 0.33cifar10:0.4-instance | Epoch [ 66/ 75] Iter[501/974]	  loss: 0.24cifar10:0.4-instance | Epoch [ 66/ 75] Iter[551/974]	  loss: 0.18cifar10:0.4-instance | Epoch [ 66/ 75] Iter[601/974]	  loss: 0.18cifar10:0.4-instance | Epoch [ 66/ 75] Iter[651/974]	  loss: 0.32cifar10:0.4-instance | Epoch [ 66/ 75] Iter[701/974]	  loss: 0.26cifar10:0.4-instance | Epoch [ 66/ 75] Iter[751/974]	  loss: 0.37cifar10:0.4-instance | Epoch [ 66/ 75] Iter[801/974]	  loss: 0.17cifar10:0.4-instance | Epoch [ 66/ 75] Iter[851/974]	  loss: 0.21cifar10:0.4-instance | Epoch [ 66/ 75] Iter[901/974]	  loss: 0.21cifar10:0.4-instance | Epoch [ 66/ 75] Iter[951/974]	  loss: 0.22
+| Test Epoch 66	 Accuracy: 88.34% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 67 | Accuracy on train set: 61.19% 
+labeled data has a size of 31242, f-score: 0.935119
+cifar10:0.4-instance | Epoch [ 67/ 75] Iter[  1/977]	  loss: 0.21cifar10:0.4-instance | Epoch [ 67/ 75] Iter[ 51/977]	  loss: 0.27cifar10:0.4-instance | Epoch [ 67/ 75] Iter[101/977]	  loss: 0.22cifar10:0.4-instance | Epoch [ 67/ 75] Iter[151/977]	  loss: 0.21cifar10:0.4-instance | Epoch [ 67/ 75] Iter[201/977]	  loss: 0.24cifar10:0.4-instance | Epoch [ 67/ 75] Iter[251/977]	  loss: 0.18cifar10:0.4-instance | Epoch [ 67/ 75] Iter[301/977]	  loss: 0.17cifar10:0.4-instance | Epoch [ 67/ 75] Iter[351/977]	  loss: 0.27cifar10:0.4-instance | Epoch [ 67/ 75] Iter[401/977]	  loss: 0.26cifar10:0.4-instance | Epoch [ 67/ 75] Iter[451/977]	  loss: 0.17cifar10:0.4-instance | Epoch [ 67/ 75] Iter[501/977]	  loss: 0.24cifar10:0.4-instance | Epoch [ 67/ 75] Iter[551/977]	  loss: 0.21cifar10:0.4-instance | Epoch [ 67/ 75] Iter[601/977]	  loss: 0.30cifar10:0.4-instance | Epoch [ 67/ 75] Iter[651/977]	  loss: 0.30cifar10:0.4-instance | Epoch [ 67/ 75] Iter[701/977]	  loss: 0.18cifar10:0.4-instance | Epoch [ 67/ 75] Iter[751/977]	  loss: 0.24cifar10:0.4-instance | Epoch [ 67/ 75] Iter[801/977]	  loss: 0.21cifar10:0.4-instance | Epoch [ 67/ 75] Iter[851/977]	  loss: 0.37cifar10:0.4-instance | Epoch [ 67/ 75] Iter[901/977]	  loss: 0.16cifar10:0.4-instance | Epoch [ 67/ 75] Iter[951/977]	  loss: 0.26
+| Test Epoch 67	 Accuracy: 88.21% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 68 | Accuracy on train set: 61.52% 
+labeled data has a size of 31311, f-score: 0.933985
+cifar10:0.4-instance | Epoch [ 68/ 75] Iter[  1/979]	  loss: 0.19cifar10:0.4-instance | Epoch [ 68/ 75] Iter[ 51/979]	  loss: 0.19cifar10:0.4-instance | Epoch [ 68/ 75] Iter[101/979]	  loss: 0.26cifar10:0.4-instance | Epoch [ 68/ 75] Iter[151/979]	  loss: 0.20cifar10:0.4-instance | Epoch [ 68/ 75] Iter[201/979]	  loss: 0.19cifar10:0.4-instance | Epoch [ 68/ 75] Iter[251/979]	  loss: 0.17cifar10:0.4-instance | Epoch [ 68/ 75] Iter[301/979]	  loss: 0.21cifar10:0.4-instance | Epoch [ 68/ 75] Iter[351/979]	  loss: 0.25cifar10:0.4-instance | Epoch [ 68/ 75] Iter[401/979]	  loss: 0.25cifar10:0.4-instance | Epoch [ 68/ 75] Iter[451/979]	  loss: 0.28cifar10:0.4-instance | Epoch [ 68/ 75] Iter[501/979]	  loss: 0.36cifar10:0.4-instance | Epoch [ 68/ 75] Iter[551/979]	  loss: 0.35cifar10:0.4-instance | Epoch [ 68/ 75] Iter[601/979]	  loss: 0.17cifar10:0.4-instance | Epoch [ 68/ 75] Iter[651/979]	  loss: 0.21cifar10:0.4-instance | Epoch [ 68/ 75] Iter[701/979]	  loss: 0.16cifar10:0.4-instance | Epoch [ 68/ 75] Iter[751/979]	  loss: 0.35cifar10:0.4-instance | Epoch [ 68/ 75] Iter[801/979]	  loss: 0.24cifar10:0.4-instance | Epoch [ 68/ 75] Iter[851/979]	  loss: 0.19cifar10:0.4-instance | Epoch [ 68/ 75] Iter[901/979]	  loss: 0.16cifar10:0.4-instance | Epoch [ 68/ 75] Iter[951/979]	  loss: 0.18
+| Test Epoch 68	 Accuracy: 88.30% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 69 | Accuracy on train set: 61.75% 
+labeled data has a size of 31426, f-score: 0.931744
+cifar10:0.4-instance | Epoch [ 69/ 75] Iter[  1/983]	  loss: 0.27cifar10:0.4-instance | Epoch [ 69/ 75] Iter[ 51/983]	  loss: 0.18cifar10:0.4-instance | Epoch [ 69/ 75] Iter[101/983]	  loss: 0.16cifar10:0.4-instance | Epoch [ 69/ 75] Iter[151/983]	  loss: 0.25cifar10:0.4-instance | Epoch [ 69/ 75] Iter[201/983]	  loss: 0.36cifar10:0.4-instance | Epoch [ 69/ 75] Iter[251/983]	  loss: 0.19cifar10:0.4-instance | Epoch [ 69/ 75] Iter[301/983]	  loss: 0.31cifar10:0.4-instance | Epoch [ 69/ 75] Iter[351/983]	  loss: 0.18cifar10:0.4-instance | Epoch [ 69/ 75] Iter[401/983]	  loss: 0.26cifar10:0.4-instance | Epoch [ 69/ 75] Iter[451/983]	  loss: 0.24cifar10:0.4-instance | Epoch [ 69/ 75] Iter[501/983]	  loss: 0.21cifar10:0.4-instance | Epoch [ 69/ 75] Iter[551/983]	  loss: 0.34cifar10:0.4-instance | Epoch [ 69/ 75] Iter[601/983]	  loss: 0.31cifar10:0.4-instance | Epoch [ 69/ 75] Iter[651/983]	  loss: 0.18cifar10:0.4-instance | Epoch [ 69/ 75] Iter[701/983]	  loss: 0.31cifar10:0.4-instance | Epoch [ 69/ 75] Iter[751/983]	  loss: 0.17cifar10:0.4-instance | Epoch [ 69/ 75] Iter[801/983]	  loss: 0.26cifar10:0.4-instance | Epoch [ 69/ 75] Iter[851/983]	  loss: 0.22cifar10:0.4-instance | Epoch [ 69/ 75] Iter[901/983]	  loss: 0.39cifar10:0.4-instance | Epoch [ 69/ 75] Iter[951/983]	  loss: 0.17
+| Test Epoch 69	 Accuracy: 88.04% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 70 | Accuracy on train set: 61.91% 
+labeled data has a size of 31521, f-score: 0.930078
+cifar10:0.4-instance | Epoch [ 70/ 75] Iter[  1/986]	  loss: 0.21cifar10:0.4-instance | Epoch [ 70/ 75] Iter[ 51/986]	  loss: 0.19cifar10:0.4-instance | Epoch [ 70/ 75] Iter[101/986]	  loss: 0.23cifar10:0.4-instance | Epoch [ 70/ 75] Iter[151/986]	  loss: 0.16cifar10:0.4-instance | Epoch [ 70/ 75] Iter[201/986]	  loss: 0.23cifar10:0.4-instance | Epoch [ 70/ 75] Iter[251/986]	  loss: 0.15cifar10:0.4-instance | Epoch [ 70/ 75] Iter[301/986]	  loss: 0.16cifar10:0.4-instance | Epoch [ 70/ 75] Iter[351/986]	  loss: 0.38cifar10:0.4-instance | Epoch [ 70/ 75] Iter[401/986]	  loss: 0.17cifar10:0.4-instance | Epoch [ 70/ 75] Iter[451/986]	  loss: 0.23cifar10:0.4-instance | Epoch [ 70/ 75] Iter[501/986]	  loss: 0.26cifar10:0.4-instance | Epoch [ 70/ 75] Iter[551/986]	  loss: 0.18cifar10:0.4-instance | Epoch [ 70/ 75] Iter[601/986]	  loss: 0.16cifar10:0.4-instance | Epoch [ 70/ 75] Iter[651/986]	  loss: 0.16cifar10:0.4-instance | Epoch [ 70/ 75] Iter[701/986]	  loss: 0.21cifar10:0.4-instance | Epoch [ 70/ 75] Iter[751/986]	  loss: 0.19cifar10:0.4-instance | Epoch [ 70/ 75] Iter[801/986]	  loss: 0.19cifar10:0.4-instance | Epoch [ 70/ 75] Iter[851/986]	  loss: 0.18cifar10:0.4-instance | Epoch [ 70/ 75] Iter[901/986]	  loss: 0.18cifar10:0.4-instance | Epoch [ 70/ 75] Iter[951/986]	  loss: 0.32
+| Test Epoch 70	 Accuracy: 88.46% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 71 | Accuracy on train set: 61.89% 
+labeled data has a size of 31631, f-score: 0.927919
+cifar10:0.4-instance | Epoch [ 71/ 75] Iter[  1/989]	  loss: 0.16cifar10:0.4-instance | Epoch [ 71/ 75] Iter[ 51/989]	  loss: 0.17cifar10:0.4-instance | Epoch [ 71/ 75] Iter[101/989]	  loss: 0.26cifar10:0.4-instance | Epoch [ 71/ 75] Iter[151/989]	  loss: 0.18cifar10:0.4-instance | Epoch [ 71/ 75] Iter[201/989]	  loss: 0.22cifar10:0.4-instance | Epoch [ 71/ 75] Iter[251/989]	  loss: 0.38cifar10:0.4-instance | Epoch [ 71/ 75] Iter[301/989]	  loss: 0.36cifar10:0.4-instance | Epoch [ 71/ 75] Iter[351/989]	  loss: 0.19cifar10:0.4-instance | Epoch [ 71/ 75] Iter[401/989]	  loss: 0.24cifar10:0.4-instance | Epoch [ 71/ 75] Iter[451/989]	  loss: 0.25cifar10:0.4-instance | Epoch [ 71/ 75] Iter[501/989]	  loss: 0.29cifar10:0.4-instance | Epoch [ 71/ 75] Iter[551/989]	  loss: 0.24cifar10:0.4-instance | Epoch [ 71/ 75] Iter[601/989]	  loss: 0.21cifar10:0.4-instance | Epoch [ 71/ 75] Iter[651/989]	  loss: 0.16cifar10:0.4-instance | Epoch [ 71/ 75] Iter[701/989]	  loss: 0.21cifar10:0.4-instance | Epoch [ 71/ 75] Iter[751/989]	  loss: 0.20cifar10:0.4-instance | Epoch [ 71/ 75] Iter[801/989]	  loss: 0.27cifar10:0.4-instance | Epoch [ 71/ 75] Iter[851/989]	  loss: 0.25cifar10:0.4-instance | Epoch [ 71/ 75] Iter[901/989]	  loss: 0.28cifar10:0.4-instance | Epoch [ 71/ 75] Iter[951/989]	  loss: 0.41
+| Test Epoch 71	 Accuracy: 88.14% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 72 | Accuracy on train set: 62.33% 
+labeled data has a size of 31685, f-score: 0.927221
+cifar10:0.4-instance | Epoch [ 72/ 75] Iter[  1/991]	  loss: 0.18cifar10:0.4-instance | Epoch [ 72/ 75] Iter[ 51/991]	  loss: 0.36cifar10:0.4-instance | Epoch [ 72/ 75] Iter[101/991]	  loss: 0.31cifar10:0.4-instance | Epoch [ 72/ 75] Iter[151/991]	  loss: 0.25cifar10:0.4-instance | Epoch [ 72/ 75] Iter[201/991]	  loss: 0.18cifar10:0.4-instance | Epoch [ 72/ 75] Iter[251/991]	  loss: 0.15cifar10:0.4-instance | Epoch [ 72/ 75] Iter[301/991]	  loss: 0.24cifar10:0.4-instance | Epoch [ 72/ 75] Iter[351/991]	  loss: 0.38cifar10:0.4-instance | Epoch [ 72/ 75] Iter[401/991]	  loss: 0.26cifar10:0.4-instance | Epoch [ 72/ 75] Iter[451/991]	  loss: 0.20cifar10:0.4-instance | Epoch [ 72/ 75] Iter[501/991]	  loss: 0.30cifar10:0.4-instance | Epoch [ 72/ 75] Iter[551/991]	  loss: 0.22cifar10:0.4-instance | Epoch [ 72/ 75] Iter[601/991]	  loss: 0.16cifar10:0.4-instance | Epoch [ 72/ 75] Iter[651/991]	  loss: 0.18cifar10:0.4-instance | Epoch [ 72/ 75] Iter[701/991]	  loss: 0.28cifar10:0.4-instance | Epoch [ 72/ 75] Iter[751/991]	  loss: 0.20cifar10:0.4-instance | Epoch [ 72/ 75] Iter[801/991]	  loss: 0.18cifar10:0.4-instance | Epoch [ 72/ 75] Iter[851/991]	  loss: 0.16cifar10:0.4-instance | Epoch [ 72/ 75] Iter[901/991]	  loss: 0.17cifar10:0.4-instance | Epoch [ 72/ 75] Iter[951/991]	  loss: 0.21
+| Test Epoch 72	 Accuracy: 87.42% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 73 | Accuracy on train set: 62.50% 
+labeled data has a size of 31762, f-score: 0.925603
+cifar10:0.4-instance | Epoch [ 73/ 75] Iter[  1/993]	  loss: 0.43cifar10:0.4-instance | Epoch [ 73/ 75] Iter[ 51/993]	  loss: 0.30cifar10:0.4-instance | Epoch [ 73/ 75] Iter[101/993]	  loss: 0.20cifar10:0.4-instance | Epoch [ 73/ 75] Iter[151/993]	  loss: 0.15cifar10:0.4-instance | Epoch [ 73/ 75] Iter[201/993]	  loss: 0.21cifar10:0.4-instance | Epoch [ 73/ 75] Iter[251/993]	  loss: 0.16cifar10:0.4-instance | Epoch [ 73/ 75] Iter[301/993]	  loss: 0.31cifar10:0.4-instance | Epoch [ 73/ 75] Iter[351/993]	  loss: 0.16cifar10:0.4-instance | Epoch [ 73/ 75] Iter[401/993]	  loss: 0.20cifar10:0.4-instance | Epoch [ 73/ 75] Iter[451/993]	  loss: 0.18cifar10:0.4-instance | Epoch [ 73/ 75] Iter[501/993]	  loss: 0.26cifar10:0.4-instance | Epoch [ 73/ 75] Iter[551/993]	  loss: 0.33cifar10:0.4-instance | Epoch [ 73/ 75] Iter[601/993]	  loss: 0.19cifar10:0.4-instance | Epoch [ 73/ 75] Iter[651/993]	  loss: 0.19cifar10:0.4-instance | Epoch [ 73/ 75] Iter[701/993]	  loss: 0.20cifar10:0.4-instance | Epoch [ 73/ 75] Iter[751/993]	  loss: 0.22cifar10:0.4-instance | Epoch [ 73/ 75] Iter[801/993]	  loss: 0.23cifar10:0.4-instance | Epoch [ 73/ 75] Iter[851/993]	  loss: 0.22cifar10:0.4-instance | Epoch [ 73/ 75] Iter[901/993]	  loss: 0.27cifar10:0.4-instance | Epoch [ 73/ 75] Iter[951/993]	  loss: 0.16
+| Test Epoch 73	 Accuracy: 87.65% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 74 | Accuracy on train set: 62.53% 
+labeled data has a size of 31830, f-score: 0.924097
+cifar10:0.4-instance | Epoch [ 74/ 75] Iter[  1/995]	  loss: 0.19cifar10:0.4-instance | Epoch [ 74/ 75] Iter[ 51/995]	  loss: 0.24cifar10:0.4-instance | Epoch [ 74/ 75] Iter[101/995]	  loss: 0.19cifar10:0.4-instance | Epoch [ 74/ 75] Iter[151/995]	  loss: 0.30cifar10:0.4-instance | Epoch [ 74/ 75] Iter[201/995]	  loss: 0.15cifar10:0.4-instance | Epoch [ 74/ 75] Iter[251/995]	  loss: 0.28cifar10:0.4-instance | Epoch [ 74/ 75] Iter[301/995]	  loss: 0.37cifar10:0.4-instance | Epoch [ 74/ 75] Iter[351/995]	  loss: 0.17cifar10:0.4-instance | Epoch [ 74/ 75] Iter[401/995]	  loss: 0.25cifar10:0.4-instance | Epoch [ 74/ 75] Iter[451/995]	  loss: 0.21cifar10:0.4-instance | Epoch [ 74/ 75] Iter[501/995]	  loss: 0.31cifar10:0.4-instance | Epoch [ 74/ 75] Iter[551/995]	  loss: 0.17cifar10:0.4-instance | Epoch [ 74/ 75] Iter[601/995]	  loss: 0.21cifar10:0.4-instance | Epoch [ 74/ 75] Iter[651/995]	  loss: 0.15cifar10:0.4-instance | Epoch [ 74/ 75] Iter[701/995]	  loss: 0.18cifar10:0.4-instance | Epoch [ 74/ 75] Iter[751/995]	  loss: 0.17cifar10:0.4-instance | Epoch [ 74/ 75] Iter[801/995]	  loss: 0.18cifar10:0.4-instance | Epoch [ 74/ 75] Iter[851/995]	  loss: 0.18cifar10:0.4-instance | Epoch [ 74/ 75] Iter[901/995]	  loss: 0.22cifar10:0.4-instance | Epoch [ 74/ 75] Iter[951/995]	  loss: 0.18
+| Test Epoch 74	 Accuracy: 87.77% 
+
+
+
+============ Train stage | lr = 0.002, T in penalty = 0.200
+Epoch 75 | Accuracy on train set: 62.84% 
+labeled data has a size of 31892, f-score: 0.922802
+cifar10:0.4-instance | Epoch [ 75/ 75] Iter[  1/997]	  loss: 0.21cifar10:0.4-instance | Epoch [ 75/ 75] Iter[ 51/997]	  loss: 0.21cifar10:0.4-instance | Epoch [ 75/ 75] Iter[101/997]	  loss: 0.27cifar10:0.4-instance | Epoch [ 75/ 75] Iter[151/997]	  loss: 0.15cifar10:0.4-instance | Epoch [ 75/ 75] Iter[201/997]	  loss: 0.29cifar10:0.4-instance | Epoch [ 75/ 75] Iter[251/997]	  loss: 0.19cifar10:0.4-instance | Epoch [ 75/ 75] Iter[301/997]	  loss: 0.30cifar10:0.4-instance | Epoch [ 75/ 75] Iter[351/997]	  loss: 0.33cifar10:0.4-instance | Epoch [ 75/ 75] Iter[401/997]	  loss: 0.31cifar10:0.4-instance | Epoch [ 75/ 75] Iter[451/997]	  loss: 0.22cifar10:0.4-instance | Epoch [ 75/ 75] Iter[501/997]	  loss: 0.23cifar10:0.4-instance | Epoch [ 75/ 75] Iter[551/997]	  loss: 0.16cifar10:0.4-instance | Epoch [ 75/ 75] Iter[601/997]	  loss: 0.17cifar10:0.4-instance | Epoch [ 75/ 75] Iter[651/997]	  loss: 0.25cifar10:0.4-instance | Epoch [ 75/ 75] Iter[701/997]	  loss: 0.28cifar10:0.4-instance | Epoch [ 75/ 75] Iter[751/997]	  loss: 0.15cifar10:0.4-instance | Epoch [ 75/ 75] Iter[801/997]	  loss: 0.16cifar10:0.4-instance | Epoch [ 75/ 75] Iter[851/997]	  loss: 0.16cifar10:0.4-instance | Epoch [ 75/ 75] Iter[901/997]	  loss: 0.24cifar10:0.4-instance | Epoch [ 75/ 75] Iter[951/997]	  loss: 0.15
+| Test Epoch 75	 Accuracy: 87.41% 
+
+
+
+best test Acc:  88.78

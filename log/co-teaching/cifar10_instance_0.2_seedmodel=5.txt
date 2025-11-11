@@ -1,0 +1,5 @@
+epoch: train_acc1 train_acc2 test_acc1 test_acc2 pure_ratio1 pure_ratio2
+Mean Accuracy For : 1: 53.58573717948718
+Mean Accuracy For : 2: 62.71033653846154
+Mean Accuracy For : 3: 70.34254807692308
+Mean Accuracy For : 4: 72.05528846153847

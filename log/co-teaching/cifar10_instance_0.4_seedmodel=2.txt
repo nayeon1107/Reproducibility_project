@@ -1,0 +1,16 @@
+epoch: train_acc1 train_acc2 test_acc1 test_acc2 pure_ratio1 pure_ratio2
+Mean Accuracy For : 1: 41.912059294871796
+Mean Accuracy For : 2: 50.050080128205124
+Mean Accuracy For : 3: 56.17487980769231
+Mean Accuracy For : 4: 56.26502403846153
+Mean Accuracy For : 5: 59.1796875
+Mean Accuracy For : 6: 63.4364983974359
+Mean Accuracy For : 7: 68.97035256410257
+Mean Accuracy For : 8: 69.92688301282051
+Mean Accuracy For : 9: 72.80649038461539
+Mean Accuracy For : 10: 72.62620192307692
+Mean Accuracy For : 11: 74.00340544871796
+Mean Accuracy For : 12: 69.79667467948718
+Mean Accuracy For : 13: 73.5126201923077
+Mean Accuracy For : 14: 74.69451121794872
+Mean Accuracy For : 15: 72.48597756410257

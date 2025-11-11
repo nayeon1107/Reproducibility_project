@@ -1,0 +1,153 @@
+Epoch 0 | Accuracy on train set: 10.70% 
+| Test Epoch 0	 Accuracy: 48.96% 
+Epoch 1 | Accuracy on train set: 40.84% 
+| Test Epoch 1	 Accuracy: 57.25% 
+Epoch 2 | Accuracy on train set: 47.94% 
+| Test Epoch 2	 Accuracy: 65.35% 
+Epoch 3 | Accuracy on train set: 54.63% 
+| Test Epoch 3	 Accuracy: 72.98% 
+Epoch 4 | Accuracy on train set: 60.40% 
+| Test Epoch 4	 Accuracy: 74.99% 
+Epoch 5 | Accuracy on train set: 61.85% 
+| Test Epoch 5	 Accuracy: 77.18% 
+Epoch 6 | Accuracy on train set: 64.06% 
+| Test Epoch 6	 Accuracy: 77.14% 
+Epoch 7 | Accuracy on train set: 63.58% 
+| Test Epoch 7	 Accuracy: 78.92% 
+Epoch 8 | Accuracy on train set: 65.42% 
+| Test Epoch 8	 Accuracy: 81.94% 
+Epoch 9 | Accuracy on train set: 68.51% 
+| Test Epoch 9	 Accuracy: 83.29% 
+Epoch 10 | Accuracy on train set: 69.38% labeled data has a size of 47337, f-score: 0.794093
+| Test Epoch 10	 Accuracy: 77.58% 
+Epoch 11 | Accuracy on train set: 63.75% labeled data has a size of 45002, f-score: 0.782099
+| Test Epoch 11	 Accuracy: 78.60% 
+Epoch 12 | Accuracy on train set: 64.85% labeled data has a size of 46327, f-score: 0.788870
+| Test Epoch 12	 Accuracy: 81.17% 
+Epoch 13 | Accuracy on train set: 66.96% labeled data has a size of 47023, f-score: 0.792166
+| Test Epoch 13	 Accuracy: 80.61% 
+Epoch 14 | Accuracy on train set: 67.61% labeled data has a size of 47007, f-score: 0.791010
+| Test Epoch 14	 Accuracy: 82.75% 
+Epoch 15 | Accuracy on train set: 68.67% labeled data has a size of 46822, f-score: 0.792939
+| Test Epoch 15	 Accuracy: 83.17% 
+Epoch 16 | Accuracy on train set: 68.50% labeled data has a size of 47094, f-score: 0.792012
+| Test Epoch 16	 Accuracy: 80.52% 
+Epoch 17 | Accuracy on train set: 67.02% labeled data has a size of 45950, f-score: 0.785615
+| Test Epoch 17	 Accuracy: 81.15% 
+Epoch 18 | Accuracy on train set: 67.94% labeled data has a size of 46440, f-score: 0.792162
+| Test Epoch 18	 Accuracy: 80.45% 
+Epoch 19 | Accuracy on train set: 67.05% labeled data has a size of 46291, f-score: 0.790391
+| Test Epoch 19	 Accuracy: 83.46% 
+Epoch 20 | Accuracy on train set: 69.84% labeled data has a size of 47936, f-score: 0.795707
+| Test Epoch 20	 Accuracy: 83.21% 
+Epoch 21 | Accuracy on train set: 69.67% labeled data has a size of 47109, f-score: 0.791335
+| Test Epoch 21	 Accuracy: 83.65% 
+Epoch 22 | Accuracy on train set: 69.50% labeled data has a size of 46751, f-score: 0.791748
+| Test Epoch 22	 Accuracy: 82.92% 
+Epoch 23 | Accuracy on train set: 69.05% labeled data has a size of 46681, f-score: 0.790343
+| Test Epoch 23	 Accuracy: 84.35% 
+Epoch 24 | Accuracy on train set: 70.70% labeled data has a size of 47389, f-score: 0.793897
+| Test Epoch 24	 Accuracy: 83.84% 
+Epoch 25 | Accuracy on train set: 70.45% labeled data has a size of 47066, f-score: 0.792759
+| Test Epoch 25	 Accuracy: 86.08% 
+Epoch 26 | Accuracy on train set: 71.58% labeled data has a size of 47651, f-score: 0.794191
+| Test Epoch 26	 Accuracy: 84.13% 
+Epoch 27 | Accuracy on train set: 70.62% labeled data has a size of 46967, f-score: 0.791002
+| Test Epoch 27	 Accuracy: 83.41% 
+Epoch 28 | Accuracy on train set: 69.78% labeled data has a size of 46630, f-score: 0.790864
+| Test Epoch 28	 Accuracy: 84.10% 
+Epoch 29 | Accuracy on train set: 70.18% labeled data has a size of 46914, f-score: 0.792663
+| Test Epoch 29	 Accuracy: 83.23% 
+Epoch 30 | Accuracy on train set: 69.44% labeled data has a size of 46870, f-score: 0.791914
+| Test Epoch 30	 Accuracy: 83.94% 
+Epoch 31 | Accuracy on train set: 70.05% labeled data has a size of 46744, f-score: 0.791973
+| Test Epoch 31	 Accuracy: 83.04% 
+Epoch 32 | Accuracy on train set: 69.35% labeled data has a size of 46803, f-score: 0.790013
+| Test Epoch 32	 Accuracy: 84.52% 
+Epoch 33 | Accuracy on train set: 70.71% labeled data has a size of 47389, f-score: 0.793011
+| Test Epoch 33	 Accuracy: 82.92% 
+Epoch 34 | Accuracy on train set: 69.35% labeled data has a size of 46321, f-score: 0.789728
+| Test Epoch 34	 Accuracy: 86.52% 
+Epoch 35 | Accuracy on train set: 71.75% labeled data has a size of 47782, f-score: 0.794672
+| Test Epoch 35	 Accuracy: 81.93% 
+Epoch 36 | Accuracy on train set: 68.18% labeled data has a size of 45935, f-score: 0.786416
+| Test Epoch 36	 Accuracy: 84.18% 
+Epoch 37 | Accuracy on train set: 71.10% labeled data has a size of 47268, f-score: 0.794026
+| Test Epoch 37	 Accuracy: 81.88% 
+Epoch 38 | Accuracy on train set: 68.50% labeled data has a size of 46024, f-score: 0.789023
+| Test Epoch 38	 Accuracy: 84.93% 
+Epoch 39 | Accuracy on train set: 71.18% labeled data has a size of 47498, f-score: 0.795086
+| Test Epoch 39	 Accuracy: 84.97% 
+Epoch 40 | Accuracy on train set: 71.20% labeled data has a size of 47149, f-score: 0.792509
+| Test Epoch 40	 Accuracy: 83.45% 
+Epoch 41 | Accuracy on train set: 70.16% labeled data has a size of 46463, f-score: 0.789790
+| Test Epoch 41	 Accuracy: 85.36% 
+Epoch 42 | Accuracy on train set: 71.17% labeled data has a size of 47450, f-score: 0.794247
+| Test Epoch 42	 Accuracy: 84.58% 
+Epoch 43 | Accuracy on train set: 70.74% labeled data has a size of 47269, f-score: 0.792401
+| Test Epoch 43	 Accuracy: 84.18% 
+Epoch 44 | Accuracy on train set: 70.02% labeled data has a size of 46835, f-score: 0.790221
+| Test Epoch 44	 Accuracy: 85.93% 
+Epoch 45 | Accuracy on train set: 71.65% labeled data has a size of 47424, f-score: 0.793628
+| Test Epoch 45	 Accuracy: 85.22% 
+Epoch 46 | Accuracy on train set: 71.31% labeled data has a size of 47213, f-score: 0.791032
+| Test Epoch 46	 Accuracy: 84.64% 
+Epoch 47 | Accuracy on train set: 70.70% labeled data has a size of 46983, f-score: 0.792393
+| Test Epoch 47	 Accuracy: 83.51% 
+Epoch 48 | Accuracy on train set: 70.04% labeled data has a size of 46887, f-score: 0.791221
+| Test Epoch 48	 Accuracy: 84.18% 
+Epoch 49 | Accuracy on train set: 70.01% labeled data has a size of 46675, f-score: 0.790637
+| Test Epoch 49	 Accuracy: 84.41% 
+Epoch 50 | Accuracy on train set: 70.78% labeled data has a size of 47288, f-score: 0.792188
+| Test Epoch 50	 Accuracy: 84.60% 
+Epoch 51 | Accuracy on train set: 70.48% labeled data has a size of 47087, f-score: 0.791853
+| Test Epoch 51	 Accuracy: 85.65% 
+Epoch 52 | Accuracy on train set: 71.45% labeled data has a size of 47273, f-score: 0.790938
+| Test Epoch 52	 Accuracy: 84.10% 
+Epoch 53 | Accuracy on train set: 70.25% labeled data has a size of 46922, f-score: 0.791761
+| Test Epoch 53	 Accuracy: 85.81% 
+Epoch 54 | Accuracy on train set: 71.99% labeled data has a size of 47694, f-score: 0.794544
+| Test Epoch 54	 Accuracy: 84.29% 
+Epoch 55 | Accuracy on train set: 70.75% labeled data has a size of 46640, f-score: 0.791209
+| Test Epoch 55	 Accuracy: 82.44% 
+Epoch 56 | Accuracy on train set: 69.40% labeled data has a size of 46489, f-score: 0.790165
+| Test Epoch 56	 Accuracy: 83.34% 
+Epoch 57 | Accuracy on train set: 69.83% labeled data has a size of 46653, f-score: 0.792939
+| Test Epoch 57	 Accuracy: 85.17% 
+Epoch 58 | Accuracy on train set: 71.42% labeled data has a size of 47313, f-score: 0.793820
+| Test Epoch 58	 Accuracy: 86.57% 
+Epoch 59 | Accuracy on train set: 72.77% labeled data has a size of 47878, f-score: 0.796086
+| Test Epoch 59	 Accuracy: 85.83% 
+Epoch 60 | Accuracy on train set: 72.08% labeled data has a size of 47292, f-score: 0.794490
+| Test Epoch 60	 Accuracy: 91.43% 
+Epoch 61 | Accuracy on train set: 76.75% labeled data has a size of 49252, f-score: 0.800374
+| Test Epoch 61	 Accuracy: 92.13% 
+Epoch 62 | Accuracy on train set: 77.55% labeled data has a size of 49271, f-score: 0.799761
+| Test Epoch 62	 Accuracy: 92.31% 
+Epoch 63 | Accuracy on train set: 78.00% labeled data has a size of 49282, f-score: 0.799318
+| Test Epoch 63	 Accuracy: 92.26% 
+Epoch 64 | Accuracy on train set: 78.36% labeled data has a size of 49361, f-score: 0.799964
+| Test Epoch 64	 Accuracy: 91.97% 
+Epoch 65 | Accuracy on train set: 78.66% labeled data has a size of 49333, f-score: 0.799830
+| Test Epoch 65	 Accuracy: 92.74% 
+Epoch 66 | Accuracy on train set: 78.92% labeled data has a size of 49393, f-score: 0.800539
+| Test Epoch 66	 Accuracy: 92.56% 
+Epoch 67 | Accuracy on train set: 79.22% labeled data has a size of 49409, f-score: 0.800623
+| Test Epoch 67	 Accuracy: 92.07% 
+Epoch 68 | Accuracy on train set: 79.34% labeled data has a size of 49385, f-score: 0.801093
+| Test Epoch 68	 Accuracy: 91.84% 
+Epoch 69 | Accuracy on train set: 79.48% labeled data has a size of 49332, f-score: 0.800049
+| Test Epoch 69	 Accuracy: 91.79% 
+Epoch 70 | Accuracy on train set: 79.90% labeled data has a size of 49389, f-score: 0.801676
+| Test Epoch 70	 Accuracy: 92.16% 
+Epoch 71 | Accuracy on train set: 79.99% labeled data has a size of 49351, f-score: 0.802942
+| Test Epoch 71	 Accuracy: 91.96% 
+Epoch 72 | Accuracy on train set: 80.08% labeled data has a size of 49374, f-score: 0.801718
+| Test Epoch 72	 Accuracy: 92.13% 
+Epoch 73 | Accuracy on train set: 80.13% labeled data has a size of 49337, f-score: 0.803048
+| Test Epoch 73	 Accuracy: 91.77% 
+Epoch 74 | Accuracy on train set: 80.46% labeled data has a size of 49377, f-score: 0.801831
+| Test Epoch 74	 Accuracy: 90.75% 
+Epoch 75 | Accuracy on train set: 80.63% labeled data has a size of 49189, f-score: 0.802537
+| Test Epoch 75	 Accuracy: 91.09% 
+Best Accuracy:92.74
